@@ -1,431 +1,364 @@
-vmess://eyJhZGQiOiIxNDEuOTUuNzUuMTQ4IiwiYWlkIjoiMCIsImhvc3QiOiJzb2Z0OTguaXIiLCJpZCI6ImNlNzZkMzJlLTNiYzctNGE0Zi1iZjJjLWFiZGRiODkzYmVkNyIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiNDQzIiwicHMiOiJJUlx1ZDgzY1x1ZGRlZVx1ZDgzY1x1ZGRmNyB8IHNvZnQ5OC5pci00NDMgfCA1NzEuOTVtcyIsInNjeSI6ImFlcy0xMjgtZ2NtIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Imh0dHAiLCJ2IjoiMiJ9
-vmess://eyJhZGQiOiIxMDQuMjEuNjkuNDQiLCJhaWQiOiIwIiwiaG9zdCI6InB0Mi12bWVzcy5zc2htYXgueHl6IiwiaWQiOiJhMTc0ZTQ5Yy1iNjlhLTQ1NGMtYThiZC05NGRlYmM3ZTRmNTkiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6IjgwIiwicHMiOiJVU1x1ZDgzY1x1ZGRmYVx1ZDgzY1x1ZGRmOCB8IHB0Mi12bWVzcy5zc2htYXgueHl6LTgwIHwgMTE2LjUzbXMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6ImF1dG8iLCJ2IjoiMiJ9
-vmess://eyJhZGQiOiI1MS43OS4yOC4yNTAiLCJhaWQiOiIwIiwiaG9zdCI6InNwZWVkdGVzdC5uZXQiLCJpZCI6IjU4ZmUxNTQyLTUyOTAtNDBhZC04MTVhLTc3NzA3YTgxYWZlNSIsIm5ldCI6InRjcCIsInBhdGgiOiJcL0lPZWJoTE1obDFDWXBrVm0yM1VDT0tZaG1tIiwicG9ydCI6IjgwIiwicHMiOiJVU1x1ZDgzY1x1ZGRmYVx1ZDgzY1x1ZGRmOCB8IHNwZWVkdGVzdC5uZXQtODAgfCA3MS40bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Imh0dHAiLCJ2IjoiMiJ9
-vmess://eyJhZGQiOiIxNzIuNjcuMjA0Ljg0IiwiYWlkIjoiMCIsImhvc3QiOiJubzEtdm1lc3Muc3NobWF4Lnh5eiIsImlkIjoiNzUzZDBkODMtM2Y1Yi00ODIxLTg2MGUtMDgyZjBiM2RiNjA5IiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzcyIsInBvcnQiOiI4MCIsInBzIjoiVVNcdWQ4M2NcdWRkZmFcdWQ4M2NcdWRkZjggfCBubzEtdm1lc3Muc3NobWF4Lnh5ei04MCB8IDQ5LjkxbXMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6ImF1dG8iLCJ2IjoiMiJ9
-vmess://eyJhZGQiOiIxMDQuMTYuMTA5LjQ1IiwiYWlkIjoiMCIsImhvc3QiOiJiLmJhcm1hc2kyLndvcmtlcnMuZGV2IiwiaWQiOiJEQ0U3NjA2MS1FRTY1LTQ5REItOTk3Qy1BNkE4ODBEQURFM0EiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3NwZWVkdGVzdFwvS2Fuc2FzLmtvdGljay5zaXRlIiwicG9ydCI6IjQ0MyIsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCBiLmJhcm1hc2kyLndvcmtlcnMuZGV2LTQ0MyB8IDQzLjY2bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiYi5iYXJtYXNpMi53b3JrZXJzLmRldiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9
-vmess://eyJhZGQiOiJydTEtdm1lc3Muc3NobWF4Lnh5eiIsImFpZCI6IjAiLCJob3N0IjoicnUxLXZtZXNzLnNzaG1heC54eXoiLCJpZCI6ImZkZGIzNzgxLTdlMTUtNDczMS1hOTMzLTk0ZGIxMTBiNGJiYyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0IjoiODAiLCJwcyI6IlVTXHVkODNjXHVkZGZhXHVkODNjXHVkZGY4IHwgcnUxLXZtZXNzLnNzaG1heC54eXotODAgfCA0OS44bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9
-vmess://eyJhZGQiOiIxNTQuMTk4LjIwOS41MiIsImFpZCI6IjAiLCJob3N0IjoiIiwiaWQiOiJlZTE0ZjZlMC1lNjUyLTQyNjAtZmZiNS1jMmE3ZmQ0ZGIzNWEiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOiI4MCIsInBzIjoiVVNcdWQ4M2NcdWRkZmFcdWQ4M2NcdWRkZjggfCAxNTQuMTk4LjIwOS41Mi04MCB8IDIxMi4zNG1zIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJhdXRvIiwidiI6IjIifQ==
-vmess://eyJhZGQiOiI0NS44NS4xMTkuMjA3IiwiYWlkIjoiMCIsImhvc3QiOiJkZWxpY2F0ZS1tZWFkb3ctYjcyOC5tYWhkaWhhaml6YWRlMTIzMDgwMDE5NjI0LndvcmtlcnMuZGV2IiwiaWQiOiIyRjA5NDg0NS1FMkJELUVCRjctREVCNy05OTU5OTI0MzZGQUYiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL0thbnNhcy5rb3RpY2suc2l0ZVwvc3BlZWR0ZXN0IiwicG9ydCI6IjQ0MyIsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCBkZWxpY2F0ZS1tZWFkb3ctYjcyOC5tYWhkaWhhaml6YWRlMTIzMDgwMDE5NjI0LndvcmtlcnMuZGV2LTQ0MyB8IDQ0Ljc1bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiZGVsaWNhdGUtbWVhZG93LWI3MjgubWFoZGloYWppemFkZTEyMzA4MDAxOTYyNC53b3JrZXJzLmRldiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9
-vmess://eyJhZGQiOiI4MC45Mi4yMDUuMTEyIiwiYWlkIjoiMCIsImhvc3QiOiIiLCJpZCI6IjRjOTBiYTc1LTIzMGItNGY4Yi1iYmZmLThlZmEwZWIwNDE1ZiIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6IjQ0MyIsInBzIjoiVVNcdWQ4M2NcdWRkZmFcdWQ4M2NcdWRkZjggfCA4MC45Mi4yMDUuMTEyLTQ0MyB8IDcuODVtcyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
-vmess://eyJhZGQiOiIxODIuMTYuMS4xOTQiLCJhaWQiOiI2NCIsImhvc3QiOiIiLCJpZCI6IjAwYTFkYTE0LWQ1NWYtNWY3NS1lMzQ2LTc5Yjk4NWUxYTcyMyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvb3B0XC92aWRlb1wvaW1hZ2VzIiwicG9ydCI6IjgwIiwicHMiOiJCWVx1ZDgzY1x1ZGRlN1x1ZDgzY1x1ZGRmZSB8IGludGVybmV0LmxpZmUuY29tLmJ5LTgwIHwgNDk5LjY4bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiaW50ZXJuZXQubGlmZS5jb20uYnkiLCJ0bHMiOiIiLCJ0eXBlIjoiYXV0byIsInYiOiIyIn0=
-vmess://eyJhZGQiOiI0Ny4yNTQuMzAuMjQzIiwiYWlkIjoiMCIsImhvc3QiOiIiLCJpZCI6IjQ2OGNkZTNkLTI2YjUtNDAwNy1hMjBhLTFjZDE5ZjQ2ZDVkNiIsIm5ldCI6IndzIiwicGF0aCI6IlwvS1h3SEdDcklWRzROWWlCMiIsInBvcnQiOiI4MCIsInBzIjoiVVNcdWQ4M2NcdWRkZmFcdWQ4M2NcdWRkZjggfCA0Ny4yNTQuMzAuMjQzLTgwIHwgNjkuMTFtcyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
-vmess://eyJhZGQiOiJhLm1hYzJ3aW4udG9wIiwiYWlkIjoiMCIsImhvc3QiOiJpY3UubWFjMndpbi50b3AiLCJpZCI6IjY1YWUzNWQxLTAxYjgtNDJlNC04MzczLTAwZDAxNjIzYzZlZCIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6IjgwODAiLCJwcyI6IkpQXHVkODNjXHVkZGVmXHVkODNjXHVkZGY1IHwgaWN1Lm1hYzJ3aW4udG9wLTgwODAgfCAzOTQuNzhtcyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
-vmess://eyJhZGQiOiIxODguMTE0Ljk3LjciLCJhaWQiOiIxIiwiaG9zdCI6IndheW5uLm1ha2V1cCIsImlkIjoiMDNmY2M2MTgtYjkzZC02Nzk2LTZhZWQtOGEzOGM5NzVkNTgxIiwibmV0Ijoid3MiLCJwYXRoIjoibGlua3Z3cyIsInBvcnQiOiI0NDMiLCJwcyI6IlVTXHVkODNjXHVkZGZhXHVkODNjXHVkZGY4IHwgd2F5bm4ubWFrZXVwLTQ0MyB8IDE4OS45N21zIiwic2N5IjoiYXV0byIsInNuaSI6IndheW5uLm1ha2V1cCIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9
-vmess://eyJhZGQiOiJrYW5zYXMua290aWNrLnNpdGUiLCJhaWQiOiIwIiwiaG9zdCI6ImthbnNhcy5rb3RpY2suc2l0ZSIsImlkIjoiMmYwOTQ4NDUtZTJiZC1lYmY3LWRlYjctOTk1OTkyNDM2ZmFmIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9zcGVlZHRlc3QiLCJwb3J0IjoiNDQzIiwicHMiOiJVU1x1ZDgzY1x1ZGRmYVx1ZDgzY1x1ZGRmOCB8IGthbnNhcy5rb3RpY2suc2l0ZS00NDMgfCAxNDQuNTRtcyIsInNjeSI6ImF1dG8iLCJzbmkiOiJrYW5zYXMua290aWNrLnNpdGUiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiYXV0byIsInYiOiIyIn0=
-vmess://eyJhZGQiOiJ3d3cueGluanVjLmNvbSIsInYiOiIyIiwicHMiOiJSRUxBWVx1ZDgzZFx1ZGVhOSB8IGhrLmZyZWV5eWRzLmRwZG5zLm9yZy04MCB8IDQ1NTIuOTJtcyIsInBvcnQiOjgwLCJpZCI6IjJmMzhmODQ4LWE4OTktNGM4Ny05ODA3LTIwN2E0MTYxNWUzYyIsImFpZCI6IjAiLCJuZXQiOiJ3cyIsInR5cGUiOiIiLCJob3N0IjoiaGsuZnJlZXl5ZHMuZHBkbnMub3JnIiwicGF0aCI6Ilwvcm9uZ3NldmVuP2VkPTIwNDgiLCJ0bHMiOiIifQ==
-vmess://eyJhZGQiOiJoazIubHJ6ZHgudWsiLCJ2IjoiMiIsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCBoazIubHJ6ZHgudWstNDQzIHwgMTIuNzFtcyIsInBvcnQiOjQ0MywiaWQiOiJkYjY5ZDViYy1kMzZjLTQ5MDMtZjQ3MS03NGI5OGM1Y2VmZTUiLCJhaWQiOiIwIiwibmV0Ijoid3MiLCJ0eXBlIjoiIiwiaG9zdCI6IiIsInBhdGgiOiJcL3JlZ2lzdGVyIiwidGxzIjoidGxzIn0=
-vmess://eyJhZGQiOiJhMWFhNTA2OS1zd2QzNDAtdDdmbDliLTFxMTZpLmhnYzEudGNwYmJyLm5ldCIsInYiOiIyIiwicHMiOiJIS1x1ZDgzY1x1ZGRlZFx1ZDgzY1x1ZGRmMCB8IGExYWE1MDY5LXN3ZDM0MC10N2ZsOWItMXExNmkuaGdjMS50Y3BiYnIubmV0LTgwODAgfCAzMDUuNTRtcyIsInBvcnQiOjgwODAsImlkIjoiOTQ2MTRkODQtOTk4Ni0xMWVlLWJlN2YtZjIzYzkxNjRjYTVkIiwiYWlkIjoiMCIsIm5ldCI6IndzIiwidHlwZSI6IiIsImhvc3QiOiIiLCJwYXRoIjoiXC8iLCJ0bHMiOiIifQ==
-vmess://eyJhZGQiOiIwZTExMjFjYS1zd2QzNDAtdGVxcWN2LTFyYzZuLmhnYzEudGNwYmJyLm5ldCIsInYiOiIyIiwicHMiOiJIS1x1ZDgzY1x1ZGRlZFx1ZDgzY1x1ZGRmMCB8IDBlMTEyMWNhLXN3ZDM0MC10ZXFxY3YtMXJjNm4uaGdjMS50Y3BiYnIubmV0LTgwODAgfCAyNjAuODRtcyIsInBvcnQiOjgwODAsImlkIjoiMzJiZDk2ZDYtMTg2Yi0xMWYwLTlhNjUtZjIzYzkxNjRjYTVkIiwiYWlkIjoiMCIsIm5ldCI6IndzIiwidHlwZSI6IiIsImhvc3QiOiIiLCJwYXRoIjoiXC8iLCJ0bHMiOiIifQ==
-vmess://eyJhZGQiOiIxMDQuMjEuMTEyLjEiLCJhaWQiOjAsImhvc3QiOiJkZTAxLnNoLWNsb3VkZmxhcmUuc2JzIiwiaWQiOiJiMzkyOGY4ZC1lYTgxLTRkNzUtYmNlYy00MDE2YTA3MmFkZmYiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOjIwOTYsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCBkZTAxLnNoLWNsb3VkZmxhcmUuc2JzLTIwOTYgfCAyOC40Mm1zIiwidGxzIjoidGxzIiwidHlwZSI6ImF1dG8iLCJzZWN1cml0eSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiIifQ==
-vmess://eyJhZGQiOiJ1czAxLnNoLWNsb3VkZmxhcmUuc2JzIiwidiI6IjIiLCJwcyI6IlJFTEFZXHVkODNkXHVkZWE5IHwgdXMwMS5zaC1jbG91ZGZsYXJlLnNicy04NDQzIHwgOC43bXMiLCJwb3J0Ijo4NDQzLCJpZCI6ImRhYmQwMmVlLWY5ODYtNGVhZS1hMzE1LWE4MTFiNTFjNDQ3MiIsImFpZCI6IjAiLCJuZXQiOiJ3cyIsInR5cGUiOiIiLCJob3N0IjoidXMwMS5zaC1jbG91ZGZsYXJlLnNicyIsInBhdGgiOiJcLyIsInRscyI6InRscyJ9
-vmess://eyJ2IjoiMiIsInBzIjoiVVNcdWQ4M2NcdWRkZmFcdWQ4M2NcdWRkZjggfCB3Y3cwMDQtMy5mYWNhaTIwMjQuY29tLTQ0MyB8IDk4LjI0bXMiLCJhZGQiOiJ3Y3cwMDQtMy5mYWNhaTIwMjQuY29tIiwicG9ydCI6IjQ0MyIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsInRscyI6InRscyIsImlkIjoiMDkzOTA4MDMtOTJhZS00MTQ2LWVhYTgtMGEwMWRiODVmNzY2Iiwic25pIjoid2N3MDA0LTMuZmFjYWkyMDI0LmNvbSIsImhvc3QiOiJ3Y3cwMDQtMy5mYWNhaTIwMjQuY29tIiwicGF0aCI6IlwvMDkzOTA4MDMifQ==
-vmess://eyJ2IjoiMiIsInBzIjoiVVNcdWQ4M2NcdWRkZmFcdWQ4M2NcdWRkZjggfCBsam0wMDUtMi5mYWNhaTIwMjQwOC5jb20tNDQzIHwgMTA3Ljk0bXMiLCJhZGQiOiJsam0wMDUtMi5mYWNhaTIwMjQwOC5jb20iLCJwb3J0IjoiNDQzIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInR5cGUiOiJub25lIiwidGxzIjoidGxzIiwiaWQiOiJiOTViZjBkOC1jNzQ4LTQwYjgtZTI0My02NDc5ZDg3OWMzZDUiLCJzbmkiOiJsam0wMDUtMi5mYWNhaTIwMjQwOC5jb20iLCJob3N0IjoibGptMDA1LTIuZmFjYWkyMDI0MDguY29tIiwicGF0aCI6IlwvYjk1YmYwZDgtIn0=
-vmess://eyJ2IjoiMiIsInBzIjoiSEtcdWQ4M2NcdWRkZWRcdWQ4M2NcdWRkZjAgfCBhMWFhNTA2OS1zd2QzNDAtdDdmbDliLTFxMTZpLmhnYzEudGNwYmJyLm5ldC04MDgwIHwgMjQwLjQ0bXMiLCJhZGQiOiJhMWFhNTA2OS1zd2QzNDAtdDdmbDliLTFxMTZpLmhnYzEudGNwYmJyLm5ldCIsInBvcnQiOiI4MDgwIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInR5cGUiOiJub25lIiwidGxzIjoiIiwiaWQiOiI5NDYxNGQ4NC05OTg2LTExZWUtYmU3Zi1mMjNjOTE2NGNhNWQiLCJob3N0IjoiYTFhYTUwNjktc3dkMzQwLXQ3Zmw5Yi0xcTE2aS5oZ2MxLnRjcGJici5uZXQiLCJwYXRoIjoiXC8ifQ==
-vmess://eyJ2IjoiMiIsInBzIjoiSEtcdWQ4M2NcdWRkZWRcdWQ4M2NcdWRkZjAgfCBjYzQyNGRlNC1zd2QzNDAtc3dwM2YzLTF0ZXVjLmhnYzEudGNwYmJyLm5ldC04MDgwIHwgMjM4LjAxbXMiLCJhZGQiOiJjYzQyNGRlNC1zd2QzNDAtc3dwM2YzLTF0ZXVjLmhnYzEudGNwYmJyLm5ldCIsInBvcnQiOjgwODAsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsInRscyI6IiIsImlkIjoiYTVhODFhMzQtZjI1Ny0xMWVmLWJhODItZjIzYzkxM2M4ZDJiIiwicGF0aCI6IlwvIn0=
-vmess://eyJ2IjoiMiIsInBzIjoiQ05cdWQ4M2NcdWRkZThcdWQ4M2NcdWRkZjMgfCBicm9hZGNhc3Rsdi5jaGF0LmJpbGliaWxpLmNvbS04MCB8IDI0NS44NG1zIiwiYWRkIjoiNzdhZDllODctc3YweHMwLXQ0NnNoZS01aWZyLmhrLnA1cHYuY29tIiwicG9ydCI6ODAsImFpZCI6Miwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJ0bHMiOiIiLCJpZCI6ImVjZmFiNmM4LWRmNWItMTFlZC05OGE3LWYyM2M5MTNjOGQyYiIsInNuaSI6ImJyb2FkY2FzdGx2LmNoYXQuYmlsaWJpbGkuY29tIiwiaG9zdCI6Ijc3YWQ5ZTg3LXN2MHhzMC10NDZzaGUtNWlmci5oay5wNXB2LmNvbSIsInBhdGgiOiJcLyJ9
-vless://b3f17d95-32ef-4a73-aa31-329417a6b72c@172.67.155.64:443?security=tls&sni=mast.kanal-tel-nufilter.site&fp=firefox&type=grpc&serviceName=Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&encryption=none#US🇺🇸 | mast.kanal-tel-nufilter.site-443 | 15.75ms
-vless://9a237f52-35f4-411f-a544-f5b574324c6b@104.18.221.160:80?security=&type=ws&path=%2F&host=bia-to-channel4.unlimiteddev.shop&encryption=none#US🇺🇸 | bia-to-channel4.unlimiteddev.shop-80 | 109.56ms
-vless://896efe15-7363-4d6c-97aa-cb0bb5499228@95.217.240.156:443?security=reality&sni=www.speedtest.net&fp=chrome&pbk=gB2mHBv8PQXA0HSxOlOcB91nq5luio58GPdkjAgmk2M&sid=10ff054b&type=tcp&flow=xtls-rprx-vision&encryption=none#REALITY|FI🇫🇮 | 95.217.240.156-443 | 114.07ms
-vless://d39e7f86-4fa1-4f80-b9e1-0e7178d3ae4c@185.231.205.43:443?security=reality&sni=foxrayiranchannel.com&fp=ios&pbk=bipoTqiHv7UfPnGOItOQ5_fyEQk4-asjTDvImoDUpRk&sid=95d2&type=tcp&flow=xtls-rprx-vision&encryption=none#REALITY|FR🇫🇷 | 185.231.205.43-443 | 82.67ms
-vless://81a22b78-3f31-45df-b2b9-702f56f71bd5@77.91.84.45:22?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=edaKSRy-jLqqq7IQzRWfiqrrT4VD8D-gLQjoZ05VKTg&sid=697a8acea036101f&type=tcp&flow=xtls-rprx-vision&encryption=none#REALITY|SE🇸🇪 | 77.91.84.45-22 | 105.06ms
-vless://b91131f7-c382-4be8-9e7d-a373a3d23d77@104.21.63.160:443?security=tls&sni=finland.kanal-tel-nufilter.site&fp=chrome&type=grpc&serviceName=Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&encryption=none#US🇺🇸 | finland.kanal-tel-nufilter.site-443 | 20.79ms
-vless://b91131f7-c382-4be8-9e7d-a373a3d23d77@104.21.20.148:443?security=tls&sni=finland.kanal-tel-nufilter.site&fp=chrome&type=grpc&serviceName=Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&encryption=none#US🇺🇸 | finland.kanal-tel-nufilter.site-443 | 16.05ms
-vless://9a237f52-35f4-411f-a544-f5b574324c6b@104.16.0.163:80?security=&type=ws&path=%2F&host=bia-to-channel4.unlimiteddev.shop&encryption=none#US🇺🇸 | bia-to-channel4.unlimiteddev.shop-80 | 104.47ms
-vless://9a237f52-35f4-411f-a544-f5b574324c6b@104.20.163.162:80?security=&type=ws&path=%2F&host=bia-to-channel4.unlimiteddev.shop&encryption=none#US🇺🇸 | bia-to-channel4.unlimiteddev.shop-80 | 95.22ms
-vless://3ceb909a-1a8a-4d47-9593-4226f21b2825@172.67.218.84:2053?security=tls&sni=uciran-uciran-uciran-uciran-uciran-uciran-uciran.wapin67458.workers.dev&type=ws&host=uciran-uciran-uciran-uciran-uciran-uciran-uciran.wapin67458.workers.dev&encryption=none#RELAY🚩 | uciran-uciran-uciran-uciran-uciran-uciran-uciran.wapin67458.workers.dev-2053 | 46.75ms
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@172.67.161.104:8443?security=tls&sni=edgood.king361.cf&type=ws&path=%2F%3Fed%3D2048&host=edgood.king361.cf&encryption=none#RELAY🚩 | edgood.king361.cf-8443 | 139.12ms
-vless://1b6ae0f5-01dc-4b96-bca9-31c672dcf0aa@50.7.85.221:443?security=tls&sni=mohsenfitshr.wibibin259.workers.dev&type=ws&path=%2F%3Fed%3D2048&host=mohsenfitshr.wibibin259.workers.dev&encryption=none#RELAY🚩 | mohsenfitshr.wibibin259.workers.dev-443 | 264.22ms
-vless://323bb776-a9eb-4c00-b754-bd17e022dbee@104.27.13.198:80?security=&type=ws&path=%2F&host=bia-to-channel3.unlimiteddev.shop&encryption=none#US🇺🇸 | bia-to-channel3.unlimiteddev.shop-80 | 210.66ms
-vless://0a1d78ed-b293-4e70-a1ca-fefab75167fa@172.67.132.41:80?security=&type=ws&path=%2F%3Fed%3D2048&host=nl42.vlessx.us&encryption=none#US🇺🇸 | nl42.vlessx.us-80 | 22.62ms
-vless://b91131f7-c382-4be8-9e7d-a373a3d23d77@172.67.193.36:443?security=tls&sni=finland.kanal-tel-nufilter.site&fp=chrome&type=grpc&serviceName=Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&encryption=none#US🇺🇸 | finland.kanal-tel-nufilter.site-443 | 15.58ms
-vless://b91131f7-c382-4be8-9e7d-a373a3d23d77@95.217.188.144:443?security=tls&sni=finland.kanal-tel-nufilter.site&fp=chrome&type=grpc&serviceName=Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&encryption=none#US🇺🇸 | finland.kanal-tel-nufilter.site-443 | 54.19ms
-vless://a25e8ff9-8650-4098-86af-b524e4ec72d8@5.75.236.28:443?security=tls&sni=admin2.pythonic-ai.com&fp=safari&type=ws&path=%2FvYoLL0j3yXajA2rNVYyVkeSUkkM&encryption=none#US🇺🇸 | admin2.pythonic-ai.com-443 | 57.69ms
-vless://c7f2ac91-c9ce-46c6-98f3-7204178e4b7c@172.233.57.232:443?security=reality&sni=tunnel.svnreallity.online&fp=chrome&pbk=d35k8hJ0aMt0SQ7DPprVNf6nm_QKabQsbfVmpg819lE&sid=3fdec952&type=grpc&encryption=none#REALITY|NL🇳🇱 | 172.233.57.232-443 | 80.45ms
-vless://94953376-9385-11ee-8335-9f4201f4a728@77.91.103.67:10004?security=&type=ws&path=%2Fvpnjantit&encryption=none#FI🇫🇮 | 77.91.103.67-10004 | 105.19ms
-vless://a87387cc-7a9f-4e8c-c653-d422425897b0@95.217.243.4:443?security=reality&sni=kh%C3%B8m%C3%ABi%C3%B1%C3%AD.%C3%A7om&fp=safari&pbk=QcDX3RiYqqDQE7Pfnt_MzB2e7D4RcaVhb8sgGhZ5Oho&sid=49a0&type=tcp&encryption=none#REALITY|FI🇫🇮 | 95.217.243.4-443 | 114ms
-vless://9a237f52-35f4-411f-a544-f5b574324c6b@104.21.7.50:80?security=&type=ws&path=%2F&host=bia-to-channel4.unlimiteddev.shop&encryption=none#US🇺🇸 | bia-to-channel4.unlimiteddev.shop-80 | 112.64ms
-vless://9a237f52-35f4-411f-a544-f5b574324c6b@172.67.135.195:80?security=&type=ws&path=%2F&host=bia-to-channel4.unlimiteddev.shop&encryption=none#US🇺🇸 | bia-to-channel4.unlimiteddev.shop-80 | 106.19ms
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@[::ffff:104.18.186.83]:443?security=tls&sni=xxx.donated001.workers.dev&type=ws&path=%2F%40V2VIPCHANNEL%2F%3Fed%3D2048&host=xxx.donated001.workers.dev&encryption=none#RELAY🚩 | xxx.donated001.workers.dev-443 | 64.99ms
-vless://9e5c214e-746a-44d5-a9d0-0b0a8d37a957@104.18.13.130:443?security=tls&sni=vpn442vpn442442.hianif.workers.dev&fp=randomized&type=ws&path=%2F%3Fed%3D2048&host=vpn442vpn442442.hianif.workers.dev&encryption=none#RELAY🚩 | vpn442vpn442442.hianif.workers.dev-443 | 30.57ms
-vless://d360d11e-d426-4583-b55e-524ab1f0afa9@104.26.5.60:2096?security=tls&sni=worker-gentle-waterfall-6de8.tigerhungry4.workers.dev&fp=randomized&type=ws&path=%2F%3Fed%3D2048&host=worker-gentle-waterfall-6de8.tigerhungry4.workers.dev&encryption=none#RELAY🚩 | worker-gentle-waterfall-6de8.tigerhungry4.workers.dev-2096 | 37.1ms
-vless://a61eb3a2-1adb-48cb-ab46-ce225769de16@5.161.157.222:443?security=tls&sni=ada36.qvqag.com&allowInsecure=1&type=ws&path=users%3Fed%3D2048&encryption=none#US🇺🇸 | ada36.qvqag.com-443 | 116.11ms
-vless://161f6b0b-47c3-487e-bffd-90b74fb67539@104.21.48.84:8443?security=tls&sni=cloud.barfak123.eu.org&fp=chrome&type=grpc&serviceName=%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF&encryption=none#RELAY🚩 | cloud.barfak123.eu.org-8443 | 204.53ms
-vless://acca9938-3695-43df-872a-9c7d2b11f3bd@172.67.193.36:8443?security=tls&sni=felinetest.site&type=ws&path=%2F&host=felinetest.site&encryption=none#US🇺🇸 | felinetest.site-8443 | 35.92ms
-vless://6847f901-3938-4083-9fd9-2de96bcb6b9f@104.31.16.98:443?security=tls&sni=hdfy2cdn1.cpionline.co&type=ws&path=%2Fvncf0bfUuZ6QgIre2fcLjqskl&host=hdfy2cdn1.cpionline.co&encryption=none#RELAY🚩 | hdfy2cdn1.cpionline.co-443 | 15.56ms
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@162.159.200.123:443?security=tls&sni=xxx.donated001.workers.dev&type=ws&path=%2F%40V2VIPCHANNEL%2F%3Fed%3D2048&host=xxx.donated001.workers.dev&encryption=none#RELAY🚩 | xxx.donated001.workers.dev-443 | 1.97ms
-vless://a61eb3a2-1adb-48cb-ab46-ce225769de16@ada70.fupaj.com:443?security=tls&type=ws&path=users%3Fed%3D2048&encryption=none#US🇺🇸 | ada70.fupaj.com-443 | 87.57ms
-vless://0af0090b-4223-4e21-84a6-46b192ff2a60@212.64.199.79:443?security=reality&sni=trendyol.com&fp=chrome&pbk=6JqJJ-wIZpy62AitE3hxzdv1DiosZ3UCPwaJQhuq4Qg&sid=de&type=grpc&serviceName=%40Catvpns&encryption=none#REALITY|TR🇹🇷 | 212.64.199.79-443 | 123.31ms
-vless://0333b495-1f8b-4d75-be2e-11c023bf78e5@172.67.132.209:80?security=&type=ws&path=%2F%3Fed%3D2048&host=nl21.vlessx.us&encryption=none#US🇺🇸 | nl21.vlessx.us-80 | 28.71ms
-vless://a61eb3a2-1adb-48cb-ab46-ce225769de16@5.161.47.151:443?security=tls&sni=ada70.fupaj.com&alpn=http%2F1.1&allowInsecure=1&type=ws&path=users%3Fed%3D2048&encryption=none#US🇺🇸 | ada70.fupaj.com-443 | 101.64ms
-vless://8a5d06d3-67af-43db-9632-54474883b3eb@170.114.46.79:443?security=tls&sni=test.worse.workers.dev&type=ws&path=%2F%3Fed%3D2048&host=test.worse.workers.dev&encryption=none#RELAY🚩 | test.worse.workers.dev-443 | 33.59ms
-vless://9bf9035c-f89c-4abb-ae78-1d0955ccbc86@172.67.199.79:80?security=&type=ws&path=%2F%3Fed%3D2048&host=nl34.vlessx.us&encryption=none#US🇺🇸 | nl34.vlessx.us-80 | 52.01ms
-vless://1ea40d23-e223-4be9-a830-036c9740b830@mamadtatardo442.my442vpn442.workers.dev:443?security=tls&sni=mamadtatardo442.my442vpn442.workers.dev&fp=randomized&type=ws&path=%2F%3Fed%3D2048&encryption=none#RELAY🚩 | mamadtatardo442.my442vpn442.workers.dev-443 | 19.39ms
-vless://5aa06d39-b6d5-4527-89b6-5e16cf73275a@us1.vlessx.us:80?security=&type=ws&path=%2F%3Fed%3D2048&host=us1.vlessx.us&encryption=none#US🇺🇸 | us1.vlessx.us-80 | 13.56ms
-vless://55520747-311e-4015-83ce-be46e2060ce3@160.79.104.11:443?allowInsecure=1&sni=cc.bgm2024.dpdns.org&type=ws&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | cc.bgm2024.dpdns.org-443 | 417.28ms
-vless://55520747-311e-4015-83ce-be46e2060ce3@160.123.255.156:443?allowInsecure=1&sni=cc.bgm2024.dpdns.org&type=ws&host=cc.bgm2024.dpdns.org&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | cc.bgm2024.dpdns.org-443 | 2.84ms
-vless://906ba92f-ef96-4133-8eee-f33202a5a721@9e.iran.pp.ua:443?sni=9e.iran.pp.ua&alpn=http%2F1.1&type=ws&host=9e.iran.pp.ua&path=%2FK8X1ocJD1r0dTd5pVam9wfp%3Dchrome&security=tls#RELAY🚩 | 9e.iran.pp.ua-443 | 270.28ms
-vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:8443?sni=KxPlZrZq3.KaMeLiNa.oRg&alpn=h2&type=ws&host=KxPlZrZq3.KaMeLiNa.oRg&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | KxPlZrZq3.KaMeLiNa.oRg-8443 | 292.85ms
-vless://83e4c5c1-f8c8-470c-b02b-63c342a4e98e@5.10.246.231:443?allowInsecure=1&sni=mc2.mianfeicf.lol&alpn=h3%2Ch2%2Chttp%2F1.1&type=ws&host=mc2.mianfeicf.lol&path=%2F%3Fed%3D2560fp%3Dchrome&security=tls#RELAY🚩 | mc2.mianfeicf.lol-443 | 26.82ms
-vless://f0f6e76e-e5fe-4e2c-9faf-34832e021eae@104.21.25.95:443?sni=ddD.890604.FiLegeAr-sg.Me&alpn=http%2F1.1&type=ws&host=ddd.890604.filegear-sg.me&path=%2FAMpQdWyvpaPkb7QHHkQBzYOfp%3Dchrome&security=tls#RELAY🚩 | ddD.890604.FiLegeAr-sg.Me-443 | 2.44ms
-vless://55520747-311e-4015-83ce-be46e2060ce3@212.183.88.136:443?allowInsecure=1&sni=cc.bgm2024.dpdns.org&type=ws&host=cc.bgm2024.dpdns.org&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | cc.bgm2024.dpdns.org-443 | 2.88ms
-vless://794f9f41-92c9-4a78-8ffc-1f82cb48a4e2@212.183.88.51:443?allowInsecure=0&sni=0229.patterdeng.pp.ua&type=ws&host=0229.patterdeng.pp.ua&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | 0229.patterdeng.pp.ua-443 | 301.9ms
-vless://9e7caa3b-ca9c-40ba-9ea0-f0c992359239@172.67.219.196:443?sni=4.852224.dpdns.org&alpn=http%2F1.1&type=ws&host=4.852224.dpdns.org&path=%2FVHDGmboDYeMcCs9fp%3Dchrome&security=tls#RELAY🚩 | 4.852224.dpdns.org-443 | 7844.83ms
-vless://80d8d83d-8cfd-4d11-932a-6749c7ac27c3@104.17.147.22:80?type=ws&host=Www.speedtest.net.developsp.ir.&path=%2F%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy%3Fed%3D2048#RELAY🚩 | Www.speedtest.net.developsp.ir.-80 | 288.91ms
-vless://895552fa-6284-4c1d-ba00-3944e0c7c626@104.21.61.154:443?sni=FfrTyui.191266.XyZ&alpn=http%2F1.1&type=ws&host=ffrtyui.191266.xyz&path=%2FC1SukvGdr58yeduy9AOGfp%3Dchrome&security=tls#RELAY🚩 | FfrTyui.191266.XyZ-443 | 29.87ms
-vless://90efad13-d266-4d10-a914-bc40028ec469@94.131.108.195:53221#TR🇹🇷 | 94.131.108.195-53221 | 122.4ms
-vless://f055d270-0e76-4a41-a53f-871bbb51b003@104.24.152.190:443?sni=what.zhonghuoxing.top&type=ws&host=what.zhonghuoxing.top&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | what.zhonghuoxing.top-443 | 68.69ms
-vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@www.speedtest.net:443?sni=LmYgYfHo22.vElTrIxS.OrG&alpn=h3h2&type=ws&host=LmYgYfHo22.vElTrIxS.OrG&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | LmYgYfHo22.vElTrIxS.OrG-443 | 256.04ms
-vless://31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9@scorpion1.info:2087?sni=Tp423F6i7M.mOlAnAmAmAlI2.iNfO&alpn=h2http%2F1.1&type=ws&host=Tp423F6i7M.mOlAnAmAmAlI2.iNfO&path=%2Ffp%3Dchrome&security=tls#NL🇳🇱 | Tp423F6i7M.mOlAnAmAmAlI2.iNfO-2087 | 433.2ms
-vless://8757944c-6128-4959-a982-7d336a51e2a3@172.66.44.126:443?sni=bESTIivpn.paGEs.dEV&type=ws&host=bestiivpn.pages.dev&path=fp%3Dchrome&security=tls#RELAY🚩 | bESTIivpn.paGEs.dEV-443 | 23.73ms
-vless://321cc007-bb85-41c9-b686-1f45cf5174e0@172.66.45.9:443?sni=MiSTliNK-CL9.pAgEs.Dev&alpn=h2%2Chttp%2F1.1&type=ws&host=mistlink-cl9.pages.dev&path=%2FERlnnsHzyLczPW3c%3Fed%3D2560fp%3Drandomized&security=tls#RELAY🚩 | MiSTliNK-CL9.pAgEs.Dev-443 | 40.32ms
-vless://d4eddaf9-a660-4905-b835-cad98677b380@104.16.178.238:80?type=ws&host=little-bird-a235-ppal03.fosawaw121.workers.dev&path=#RELAY🚩 | little-bird-a235-ppal03.fosawaw121.workers.dev-80 | 66.46ms
-vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:443?sni=ZlRuVwDm5.ZuKaR.InFo&alpn=h2http%2F1.1&type=ws&host=ZlRuVwDm5.ZuKaR.InFo&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | ZlRuVwDm5.ZuKaR.InFo-443 | 95.38ms
-vless://03c93f49-d573-4889-a4bb-187047c5a314@172.67.158.146:443?sni=m7rtTYu.777169.xyz&alpn=http%2F1.1&type=ws&host=m7rttyu.777169.xyz&path=%2FbstMMelSTch7YcAPgiEbtfp%3Dchrome&security=tls#RELAY🚩 | m7rtTYu.777169.xyz-443 | 36.4ms
-vless://2b4bed25-a5ef-439d-93b1-395b7bcec58b@45.131.208.238:80?sni=workerr.dimon22287.workers.dev&type=ws&host=workerr.dimon22287.workers.dev&path=Telegram%40WangCai2#RELAY🚩 | workerr.dimon22287.workers.dev-80 | 46.79ms
-vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@www.speedtest.net:2096?sni=QtRkJtLt23.pRiMeXaD.OrG&alpn=h3h2&type=ws&host=QtRkJtLt23.pRiMeXaD.OrG&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | QtRkJtLt23.pRiMeXaD.OrG-2096 | 57ms
-vless://5453ae26-250d-4e79-b4ec-016baf806865@172.67.149.43:443?sni=7d33510a-5dA0-4F85-b1d5-5321a9eaA72a.890603.pP.uA&alpn=http%2F1.1&type=ws&host=7d33510a-5da0-4f85-b1d5-5321a9eaa72a.890603.pp.ua&path=%2FXcQF058rNJ3gc4ajfp%3Dchrome&security=tls#RELAY🚩 | 7d33510a-5dA0-4F85-b1d5-5321a9eaA72a.890603.pP.uA-443 | 328.36ms
-vless://4e41764d-ac31-43f5-8e9b-231ddf252d1f@172.67.144.126:443?sni=899.288288.shoP&alpn=http%2F1.1&type=ws&host=899.288288.shop&path=%2FwAlPWPCQWnsVcNgLsMVzfp%3Dchrome&security=tls#RELAY🚩 | 899.288288.shoP-443 | 79.57ms
-vless://5453ae26-250d-4e79-b4ec-016baf806865@172.67.163.14:443?sni=1QQsSS.2031.PP.UA&alpn=http%2F1.1&type=ws&host=1qqsss.2031.pp.ua&path=%2FXcQF058rNJ3gc4ajfp%3Dchrome&security=tls#RELAY🚩 | 1QQsSS.2031.PP.UA-443 | 210.5ms
-vless://b8bd42a9-551f-419d-b70d-4aefdd2cb074@204.10.194.78:443?sni=yfnl1.xn--4gq62f52gppi29k.com&flow=xtls-rprx-vision-udp443&fp=safari&security=tls#RELAY🚩 | yfnl1.xn--4gq62f52gppi29k.com-443 | 139.6ms
-vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:443?sni=AoNoUeSn2.ArAsToO.InFo&alpn=h2&type=ws&host=AoNoUeSn2.ArAsToO.InFo&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | AoNoUeSn2.ArAsToO.InFo-443 | 336.98ms
-vless://75fde681-ec64-4654-86fa-30732e8e179c@62.3.12.185:443?sni=NGINX-Z.pages.DEV&alpn=h3&type=ws&host=nginx-z.pages.dev&path=fp%3Dchrome&security=tls#RELAY🚩 | NGINX-Z.pages.DEV-443 | 36.05ms
-vless://794f9f41-92c9-4a78-8ffc-1f82cb48a4e2@160.79.104.113:443?sni=0229.patterdeng.pp.ua&type=ws&host=0229.patterdeng.pp.ua&path=fp%3Dchrome&security=tls#RELAY🚩 | 0229.patterdeng.pp.ua-443 | 2.72ms
-vless://44ed7a37-af89-4cd1-8680-83a7207810d9@104.21.26.17:443?sni=1.459.PP.uA&alpn=http%2F1.1&type=ws&host=1.459.pp.ua&path=%2Fen98IVNnhxyMtdfYnjLYhU30Ufp%3Dchrome&security=tls#RELAY🚩 | 1.459.PP.uA-443 | 210.66ms
-vless://49d4b99d-7d99-416a-9778-2c75d79100bb@172.66.47.92:443?sni=Work-YUU00.pageS.dEv&alpn=h2%2Chttp%2F1.1&type=ws&host=work-yuu00.pages.dev&path=fp%3Dchrome&security=tls#RELAY🚩 | Work-YUU00.pageS.dEv-443 | 48.4ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@104.21.56.44:80?type=ws&host=REEdfREe8MahSaNg2.rEDOrG.IR&path=%2FTELEGRAM%40MARAMBASHI_MARAMBASHI#RELAY🚩 | REEdfREe8MahSaNg2.rEDOrG.IR-80 | 179.66ms
-vless://6f183280-b258-437a-a216-e83f7dece776@45.131.6.102:80?sni=901.dbodanwi.workers.dev&type=ws&host=901.dbodanwi.workers.dev&path=Telegram%40WangCai2%2F%3Fed#RELAY🚩 | 901.dbodanwi.workers.dev-80 | 82.54ms
-vless://103104c5-a3f5-4c48-8d8f-a72a56959799@104.18.181.3:443?sni=ZyZZZOAO.PutaTa.EU.oRG&alpn=h2%2Chttp%2F1.1&type=ws&host=zyzzzoao.putata.eu.org&path=%2FrcSLZKdweUgLgufD%3Fed%3D2560fp%3Drandomized&security=tls#RELAY🚩 | ZyZZZOAO.PutaTa.EU.oRG-443 | 630.27ms
-vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:8443?sni=ZlRuVwDm4.ZuKaR.InFo&alpn=h2http%2F1.1&type=ws&host=ZlRuVwDm4.ZuKaR.InFo&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | ZlRuVwDm4.ZuKaR.InFo-8443 | 200.64ms
-vless://03e4d6fe-f461-499f-b9c6-35c60f192e1a@104.24.147.64:80?type=ws&host=ppal03-ppal03.letiwe3303.workers.dev&path=#RELAY🚩 | ppal03-ppal03.letiwe3303.workers.dev-80 | 28.34ms
-vless://0eb83f3e-7b95-427a-8952-abedfca1869f@172.67.73.163:8080?type=ws&host=QW.VU6d72nt9y.zULaiR.orG.&path=%2F%3Fed%3D2048#RELAY🚩 | QW.VU6d72nt9y.zULaiR.orG.-8080 | 367.64ms
-vless://ced307a2-af2c-4113-bebc-fb888c702b7d@104.21.11.194:443?sni=m4dfghu.999358.xyz&alpn=http%2F1.1&type=ws&host=m4dfghu.999358.xyz&path=%2Fa2YATZF8eZrBwsbnEcmJLxCfp%3Dchrome&security=tls#RELAY🚩 | m4dfghu.999358.xyz-443 | 43.48ms
-vless://8f320d6a-9953-4065-b61c-d62f89a6767f@104.26.12.23:2083?sni=e.exedu.ip-ddns.com&type=ws&host=e.exedu.ip-ddns.com&path=%2F%3Fed%3D2048fp%3Dchrome&security=tls#RELAY🚩 | e.exedu.ip-ddns.com-2083 | 71.3ms
-vless://Parsashonam-237@Zmaoz.Faculty.Ucdavis.Edu:80?sni=Zmaoz.Faculty.Ucdavis.Edu.&type=ws&host=Parsashonam-DE.ir&path=%2F%40Parsashonam%3Fed%3D2048#US🇺🇸 | Zmaoz.Faculty.Ucdavis.Edu.-80 | 215.02ms
-vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:443?sni=FdEuQxFq2.ZuMiNhO.InFo&alpn=h2http%2F1.1&type=ws&host=FdEuQxFq2.ZuMiNhO.InFo&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | FdEuQxFq2.ZuMiNhO.InFo-443 | 255.65ms
-vless://1ccc1dd8-d8ed-4b69-b0c2-27f6282f9755@104.26.9.63:2083?sni=test.bujidao.org&type=ws&host=test.bujidao.org&path=%2F%3Fed%3D2048fp%3Dchrome&security=tls#RELAY🚩 | test.bujidao.org-2083 | 181.85ms
-vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:443?sni=ZgPrMnBc2.ZuMuT.InFo&alpn=h2http%2F1.1&type=ws&host=ZgPrMnBc2.ZuMuT.InFo&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | ZgPrMnBc2.ZuMuT.InFo-443 | 257.94ms
-vless://f12977e6-d296-4d94-9aaf-d31770b70f84@104.21.69.44:443?sni=cr77.hedieh.dpdns.org&type=ws&host=cr77.hedieh.dpdns.org&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | cr77.hedieh.dpdns.org-443 | 142.48ms
-vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:443?sni=QiSbUiWg2.ZuMiNhO.InFo&alpn=h2http%2F1.1&type=ws&host=QiSbUiWg2.ZuMiNhO.InFo&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | QiSbUiWg2.ZuMiNhO.InFo-443 | 120.57ms
-vless://5453ae26-250d-4e79-b4ec-016baf806865@172.67.205.22:443?sni=1SsdDdfFffHhHJjJJ.20220420.PP.ua&alpn=http%2F1.1&type=ws&host=1ssdddffffhhhjjjj.20220420.pp.ua&path=%2FXcQF058rNJ3gc4ajfp%3Dchrome&security=tls#RELAY🚩 | 1SsdDdfFffHhHJjJJ.20220420.PP.ua-443 | 188.04ms
-vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@www.speedtest.net:8443?sni=RwQfYqAh27.tRaViQo.oRg&alpn=h3h2&type=ws&host=RwQfYqAh27.tRaViQo.oRg&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | RwQfYqAh27.tRaViQo.oRg-8443 | 299.5ms
-vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:443?sni=BmUcKcNq2.ZuKaRiO.InFo&alpn=h2http%2F1.1&type=ws&host=BmUcKcNq2.ZuKaRiO.InFo&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | BmUcKcNq2.ZuKaRiO.InFo-443 | 196.85ms
-vless://f12977e6-d296-4d94-9aaf-d31770b70f84@172.67.204.84:443?sni=cr77.hedieh.dpdns.org&type=ws&host=cr77.hedieh.dpdns.org&path=%2F%3Fed%3D2560fp%3Dchromefp%3Dchrome&security=tls#RELAY🚩 | cr77.hedieh.dpdns.org-443 | 2.39ms
-vless://ac2bfdf2-7c88-449f-b353-0ff9d026bb6a@www.speedtest.net:80?type=ws&host=www.speedtest.net1.svgspeedtest.net.&path=%2F%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet%3Fed%3D2048#RELAY🚩 | www.speedtest.net1.svgspeedtest.net.-80 | 46.11ms
-vless://9dd24d01-2b7a-4bd8-8c76-129d6ca89b8c@104.19.252.87:443?sni=kawaiifreevpn-7ds.pages.dev&type=ws&host=kawaiifreevpn-7ds.pages.dev&path=%2F%3Fed%3D2560fp%3Drandom&security=tls#RELAY🚩 | kawaiifreevpn-7ds.pages.dev-443 | 42.33ms
-vless://9e769ce1-34be-4e3f-b0a6-823f30eb8f69@205.233.181.186:8443?sni=CiR346yL3b.DeRaKhT.iNfO&type=ws&host=CiR346yL3b.DeRaKhT.iNfO&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | CiR346yL3b.DeRaKhT.iNfO-8443 | 196.97ms
-vless://5453ae26-250d-4e79-b4ec-016baf806865@104.21.22.133:443?sni=1SsdDdfFffHhHJjJJ.20220420.PP.ua&alpn=http%2F1.1&type=ws&host=1ssdddffffhhhjjjj.20220420.pp.ua&path=%2FXcQF058rNJ3gc4ajfp%3Dchrome&security=tls#RELAY🚩 | 1SsdDdfFffHhHJjJJ.20220420.PP.ua-443 | 2.49ms
-vless://9a2680ff-c5d5-410a-9108-8d6b10e4ea1e@104.24.37.192:80?type=ws&host=ppal03.dolobe7975.workers.dev&path=%2F%3Fed%3D2560#RELAY🚩 | ppal03.dolobe7975.workers.dev-80 | 47.6ms
-vless://d889b4c8-dab9-4b0c-932b-e4071c727308@172.67.220.93:443?sni=M6dFg.777219.XYZ&alpn=http%2F1.1&type=ws&host=m6dfg.777219.xyz&path=%2Fs9mtnLBjERPwvxRAfp%3Dchrome&security=tls#RELAY🚩 | M6dFg.777219.XYZ-443 | 35.17ms
-vless://422f7f8a-2f97-444f-8ec1-2505c9b8482b@172.64.80.228:443?sni=bantony199.top&type=ws&host=bantony199.top&path=fp%3Dchrome&security=tls#RELAY🚩 | bantony199.top-443 | 80.39ms
-vless://e2d6455c-9846-4502-8394-16b8c1c07b68@172.66.47.25:443?sni=GrOupYOUNeS.PAGes.DEV&type=ws&host=GrOupYOUNeS.PAGes.DEV&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | GrOupYOUNeS.PAGes.DEV-443 | 24.25ms
-vless://f0f6e76e-e5fe-4e2c-9faf-34832e021eae@172.67.172.91:443?sni=Ty.457.PP.uA&alpn=http%2F1.1&type=ws&host=ty.457.pp.ua&path=%2FAMpQdWyvpaPkb7QHHkQBzYOfp%3Dchrome&security=tls#RELAY🚩 | Ty.457.PP.uA-443 | 118.36ms
-vless://87ced8c4-b4d4-4c7b-ba67-11b78833a1b6@172.66.44.68:443?sni=37c60f8d.ALBAnGURaKUqi.paGEs.dEv&alpn=h2%2Chttp%2F1.1&type=ws&host=37c60f8d.albangurakuqi.pages.dev&path=%2Ftelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%3Fed%3D2560fp%3Drandomized&security=tls#RELAY🚩 | 37c60f8d.ALBAnGURaKUqi.paGEs.dEv-443 | 29.98ms
-vless://80d8d83d-8cfd-4d11-932a-6749c7ac27c3@104.17.148.22:80?type=ws&host=Www.speedtest.net.developsp.ir.&path=%2F%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy%3Fed%3D2048#RELAY🚩 | Www.speedtest.net.developsp.ir.-80 | 2.46ms
-vless://ac2bfdf2-7c88-449f-b353-0ff9d026bb6a@104.17.147.22:80?type=ws&host=www.speedtest.net1.svgspeedtest.net.&path=%2F%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet----%40SavageNet%3Fed%3D2048#RELAY🚩 | www.speedtest.net1.svgspeedtest.net.-80 | 2.82ms
-vless://c98a16e4-0dc5-42f0-b3db-30f04525c123@104.17.210.171:443?sni=vless10-9sc.pages.dev&alpn=h3&type=ws&host=vless10-9sc.pages.dev&path=fp%3Dchrome&security=tls#RELAY🚩 | vless10-9sc.pages.dev-443 | 27.24ms
-vless://9368b093-d790-4096-9d8a-1265e82f9e2f@172.66.47.15:443?sni=GgGgr.PaGES.dEV&type=ws&host=GgGgr.PaGES.dEV&path=fp%3Dchrome&security=tls#RELAY🚩 | GgGgr.PaGES.dEV-443 | 42.43ms
-vless://31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9@scorpion1.info:2087?sni=Tp418Gi9H1.mOlAnAmAmAlI1.iNfO&alpn=h2http%2F1.1&type=ws&host=Tp418Gi9H1.mOlAnAmAmAlI1.iNfO&path=%2Ffp%3Dchrome&security=tls#DE🇩🇪 | Tp418Gi9H1.mOlAnAmAmAlI1.iNfO-2087 | 306.4ms
-vless://d60fc3c5-9f07-4cdb-b81f-70af27936bdc@104.21.1.12:2083?sni=ex.sue.x10.mx&type=ws&host=ex.sue.x10.mx&path=%2F%3Fed%3D2560fp%3Dchrome&security=tls#RELAY🚩 | ex.sue.x10.mx-2083 | 249.6ms
-vless://a16178b8-8f03-4106-bd7d-d737c1f757af@zula.ir:8880?type=ws&host=join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir&path=%2F%3Fed%3D2048#RELAY🚩 | join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir-8880 | 199.36ms
-vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@104.17.147.22:8443?sni=GxVpOnLl13.pRiMeXaD.OrG&type=ws&host=GxVpOnLl13.pRiMeXaD.OrG&path=%2Fsecurity%3Dtls#RELAY🚩 | GxVpOnLl13.pRiMeXaD.OrG-8443 | 22.54ms
-vless://b83e42bb-d27d-4544-8115-42373e8fb8e2@172.67.195.73:2053?sni=txmt.conetcdata.dpdns.org&type=ws&host=txmt.conetcdata.dpdns.org&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | txmt.conetcdata.dpdns.org-2053 | 146.42ms
-vless://d3c62dea-ac54-4163-ab3f-20d6ef9f8420@104.16.117.93:2087?sni=1.659118019.uk&type=ws&host=1.659118019.uk&path=%2F%3Fed%3D2560fp%3Drandom&security=tls#RELAY🚩 | 1.659118019.uk-2087 | 98.67ms
-vless://39afdd8e-456d-4afb-9f13-fd0981624230@fra5.vpntype.dev:443?sni=fra5.vpntype.dev&alpn=h2%2Chttp%2F1.1&flow=xtls-rprx-vision-udp443&fp=chrome&security=tls#GI🇬🇮 | fra5.vpntype.dev-443 | 193.09ms
-vless://d3c62dea-ac54-4163-ab3f-20d6ef9f8420@188.114.97.179:2087?sni=1.659118019.uk&type=ws&host=1.659118019.uk&path=%2F%3Fed%3D2560fp%3Drandom&security=tls#RELAY🚩 | 1.659118019.uk-2087 | 2.76ms
-vless://f055d270-0e76-4a41-a53f-871bbb51b003@103.21.244.17:443?sni=what.zhonghuoxing.top&type=ws&host=what.zhonghuoxing.top&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | what.zhonghuoxing.top-443 | 2.45ms
-vless://b30a50bc-0f63-422d-bbd6-8c790c0abb4d@172.67.172.91:443?sni=m8ui9.457.pp.ua&alpn=http%2F1.1&type=ws&host=m8ui9.457.pp.ua&path=%2F32FkuhQSR866TVMXPAlfp%3Dchrome&security=tls#RELAY🚩 | m8ui9.457.pp.ua-443 | 116.19ms
-vless://f82fb954-06a1-4f0b-9180-17e07585b61f@172.67.212.82:443?sni=6ercvbnm.131.pp.ua&type=ws&host=6ercvbnm.131.pp.ua&path=%2F0HKVAwzpuQtCNTI3SlZor0security%3Dtls#RELAY🚩 | 6ercvbnm.131.pp.ua-443 | 117.77ms
-vless://432e1e8b-18ce-488f-8203-2ba54b2fb61f@cf.cishanjichang.me:443?sni=us.cishanjichang.me&type=ws&host=us.cishanjichang.me&path=%2Fswordnewnewnewsecurity%3Dtls#RELAY🚩 | us.cishanjichang.me-443 | 116.37ms
-vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@104.17.147.22:443?sni=GxVpOnLl12.pRiMeXaD.OrG&type=ws&host=GxVpOnLl12.pRiMeXaD.OrG&path=%2Fflow%3D-udp443&fp=&security=tls#RELAY🚩 | GxVpOnLl12.pRiMeXaD.OrG-443 | 233.09ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@147.78.140.85:80?allowInsecure=1&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2Fre5IzbZ9IZZMddtw%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 298.4ms
-vless://794f9f41-92c9-4a78-8ffc-1f82cb48a4e2@185.133.35.45:443?allowInsecure=0&sni=0229.patterdeng.pp.ua&type=ws&host=0229.patterdeng.pp.ua&path=%2Fproxyip%3D185.133.35.45%3A443security%3Dtls#RELAY🚩 | 0229.patterdeng.pp.ua-443 | 2.93ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@94.247.142.38:80?allowInsecure=0&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2FTelegramU0001F1E8U0001F1F3+%40pgkj666+%2F%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 209.84ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@94.247.142.49:80?allowInsecure=0&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2FTelegramU0001F1E8U0001F1F3+%40pgkj666+%2F%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 92.69ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@94.247.142.79:80?allowInsecure=0&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2FTelegramU0001F1E8U0001F1F3+%40pgkj666+%2F%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 2.54ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@194.36.55.181:80?allowInsecure=1&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2Fre5IzbZ9IZZMddtw%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 3.06ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@94.247.142.19:80?allowInsecure=0&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2FTelegramU0001F1E8U0001F1F3+%40pgkj666+%2F%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 3.13ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@94.247.142.107:80?allowInsecure=0&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2FTelegramU0001F1E8U0001F1F3+%40pgkj666+%2F%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 2.98ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@94.247.142.35:80?allowInsecure=0&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2FTelegramU0001F1E8U0001F1F3+%40pgkj666+%2F%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 3.56ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@94.247.142.87:80?allowInsecure=0&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2FTelegramU0001F1E8U0001F1F3+%40pgkj666+%2F%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 3.21ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@94.247.142.7:80?allowInsecure=0&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2FTelegramU0001F1E8U0001F1F3+%40pgkj666+%2F%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 2.99ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@89.116.250.78:80?allowInsecure=0&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 2.7ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@89.116.250.78:80?allowInsecure=0&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2FTelegramU0001F1E8U0001F1F3+%40WangCai2+%2F%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 2.48ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@45.8.211.61:80?allowInsecure=1&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2Fre5IzbZ9IZZMddtw%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 3.01ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@185.174.138.206:80?allowInsecure=0&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2Fre5IzbZ9IZZMddtw%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 2.51ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@66.81.247.175:80?allowInsecure=1&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2Fre5IzbZ9IZZMddtw%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 2.75ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@45.159.217.86:80?allowInsecure=1&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2Fre5IzbZ9IZZMddtw%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 3.26ms
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@185.148.106.32:80?allowInsecure=1&sni=ipsycho.suex12.ir&type=ws&host=ipsycho.suex12.ir&path=%2Fre5IzbZ9IZZMddtw%3Fed%3D2560#RELAY🚩 | ipsycho.suex12.ir-80 | 2.75ms
-vless://291c27a5-34d2-4081-83cc-2196cd208148@170.114.45.6:8080?allowInsecure=0&sni=xrr.rtxconfigz.xyz&type=ws&host=xrr.rtxconfigz.xyz&path=%2F#SG🇸🇬 | xrr.rtxconfigz.xyz-8080 | 233.54ms
-trojan://your_password@16.171.12.136:443?security=tls&sni=aws-se-stockholm-1.f1rocketnode.com&type=tcp#SE🇸🇪 | aws-se-stockholm-1.f1rocketnode.com-443 | 153.23ms
-trojan://your_password@15.160.138.221:443?security=tls&sni=aws-it-milan-1.f1rocketnode.com&type=tcp#IT🇮🇹 | aws-it-milan-1.f1rocketnode.com-443 | 178.51ms
-trojan://your_password@16.62.65.57:443?security=tls&sni=aws-ch-zurich-1.f1rocketnode.com&type=tcp#CH🇨🇭 | aws-ch-zurich-1.f1rocketnode.com-443 | 146.79ms
-trojan://your_password@52.56.183.187:443?security=tls&sni=aws-uk-london-1.f1rocketnode.com&type=tcp#GB🇬🇧 | aws-uk-london-1.f1rocketnode.com-443 | 108.15ms
-trojan://af6a3685-c423-4579-bfea-784c453d5e23@146.59.3.14:443?security=tls&allowInsecure=1&type=tcp#FR🇫🇷 | 146.59.3.14-443 | 100.77ms
-trojan://e30dbfd0-f15a-11ed-9080-1239d0255272@51.159.59.186:443?security=tls&sni=fr.test3.net&allowInsecure=1&type=tcp#FR🇫🇷 | fr.test3.net-443 | 116.55ms
-trojan://b3df8f31-da3a-4cda-90b1-b3b777cd48e7@51.255.49.192:443?security=tls&sni=ba24.ir&allowInsecure=1&type=tcp#IR🇮🇷 | ba24.ir-443 | 398.05ms
-trojan://your_password@3.29.95.54:443?security=tls&sni=aws-uae-1.f1rocketnode.com&allowInsecure=1&type=tcp#AE🇦🇪 | aws-uae-1.f1rocketnode.com-443 | 220.83ms
-trojan://7b06d22a8a7c764f@5.44.249.53:3389?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | 5.44.249.53-3389 | 221.7ms
-trojan://20210200-49c6-11ed-a9ef-1239d0255272@172.67.24.177:443?security=tls&sni=kipi.covid19.go.id&allowInsecure=1&type=tcp#RELAY🚩 | kipi.covid19.go.id-443 | 46.75ms
-trojan://whyvpn-7dayaktif@104.18.10.39:443?security=tls&sni=do3.kitu.xyz&allowInsecure=1&type=tcp#NL🇳🇱 | do3.kitu.xyz-443 | 182.85ms
-trojan://3f23c1eb-ace4-49ec-a7f0-f591b006b95a@23.227.38.45:443?security=tls&sni=jus3.jsjc.sbs&allowInsecure=1&type=tcp#DE🇩🇪 | jus3.jsjc.sbs-443 | 233.46ms
-trojan://your_password@15.236.64.14:443?security=tls&sni=aws-fr-paris-1.f1rocketnode.com&type=tcp#FR🇫🇷 | aws-fr-paris-1.f1rocketnode.com-443 | 172.98ms
-trojan://your_password@13.244.104.87:443?security=tls&sni=aws-za-capetown-1.f1rocketnode.com&type=tcp#ZA🇿🇦 | aws-za-capetown-1.f1rocketnode.com-443 | 252.13ms
-trojan://aef2ca33-b162-409f-8f16-4c736c338412@20.205.37.136:443?security=tls&allowInsecure=1&type=tcp#HK🇭🇰 | 20.205.37.136-443 | 209.53ms
-trojan://5c5ceb40-902b-11eb-945a-1239d0255272@103.253.24.212:443?security=tls&sni=sg1-trojan.bonds.id&type=tcp#SG🇸🇬 | sg1-trojan.bonds.id-443 | 252.59ms
-trojan://3f23c1eb-ace4-49ec-a7f0-f591b006b95a@23.227.39.36:443?security=tls&sni=jsg1.jsjc.sbs&allowInsecure=1&type=tcp#DE🇩🇪 | jsg1.jsjc.sbs-443 | 370.58ms
-trojan://20210200-49c6-11ed-a9ef-1239d0255272@104.18.21.18:443?security=tls&sni=corona.jakarta.go.id&allowInsecure=1&type=tcp#ID🇮🇩 | corona.jakarta.go.id-443 | 534.52ms
-trojan://7d0f1f83-0f2f-4b90-930e-de44ac233fef@20.210.234.145:443?security=tls&sni=in.stablize.top&allowInsecure=1&type=tcp#US🇺🇸 | in.stablize.top-443 | 255.58ms
-trojan://36d48ba9-7445-4b41-b210-58f4e07a627a@104.31.16.120:443?security=tls&sni=in01.trojanyyds.xyz&type=tcp#SG🇸🇬 | in01.trojanyyds.xyz-443 | 843.33ms
-trojan://d76294c5-a31f-408d-ba0b-89880107cab5@5.75.152.12:443?security=tls&allowInsecure=1&type=tcp#DE🇩🇪 | 5.75.152.12-443 | 93.24ms
-trojan://bfb23be0-6c4f-11ee-8513-1239d0255272@51.210.182.170:443?security=tls&sni=zula.ir&allowInsecure=1&type=tcp#RELAY🚩 | zula.ir-443 | 2.12ms
-trojan://your_password@43.206.127.212:443?security=tls&sni=aws-jp-tokyo-1.f1rocketnode.com&allowInsecure=1&type=tcp#JP🇯🇵 | aws-jp-tokyo-1.f1rocketnode.com-443 | 177.11ms
-trojan://26a663656e575c0b@5.44.249.51:3389?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | 5.44.249.51-3389 | 219.74ms
-trojan://4bacb8f1a089763b@5.44.249.50:3389?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | 5.44.249.50-3389 | 220.8ms
-trojan://8ddcc360-5223-11ee-bc2d-1239d0255272@104.31.16.14:443?security=tls&sni=fr1.test3.net&type=ws&path=%2Fhowdy&host=fr1.test3.net#FR🇫🇷 | fr1.test3.net-443 | 196.72ms
-trojan://0c6a3341e8d5ab17@5.44.249.42:3389?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | 5.44.249.42-3389 | 216.91ms
-trojan://9bb27128-e6d2-4cac-bbd3-beb46c4417f8@my02.trojanyyds.xyz:443?security=tls&type=tcp#SG🇸🇬 | my02.trojanyyds.xyz-443 | 1125.28ms
-trojan://0c6a3341e8d5ab17@5.44.249.44:3389?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | 5.44.249.44-3389 | 217.99ms
-trojan://26a663656e575c0b@5.44.249.52:3389?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | 5.44.249.52-3389 | 216.7ms
-trojan://28c79056-ccfd-4cc1-93d4-c337cc782e65@89.221.224.94:80?security=tls&sni=is2-t.sshmax.xyz&allowInsecure=1&type=tcp#US🇺🇸 | is2-t.sshmax.xyz-80 | 192.83ms
-trojan://mnk8fd@104.21.51.9:443?security=tls&sni=aws-uae-1.f1cflined.com&alpn=http%2F1.1&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-uae-1.f1cflined.com#RELAY🚩 | aws-uae-1.f1cflined.com-443 | 145.61ms
-trojan://0b65bb06-6b28-487a-8e3c-820dda51e977@172.67.131.245:443?security=tls&sni=series-v1.samanehha.co&type=tcp#RELAY🚩 | series-v1.samanehha.co-443 | 63.79ms
-trojan://your_password@43.205.109.9:443?security=tls&sni=aws-in-mumbai-1.f1rocketnode.com&type=tcp#IN🇮🇳 | aws-in-mumbai-1.f1rocketnode.com-443 | 233.92ms
-trojan://0b65bb06-6b28-487a-8e3c-820dda51e977@104.21.12.87:443?security=tls&sni=series-v1.samanehha.co&type=tcp#RELAY🚩 | series-v1.samanehha.co-443 | 5.05ms
-trojan://46d69a7e-9002-44a3-99c1-01c412f29726@185.176.24.105:443?security=tls&sni=k9de1.djjc.sbs&allowInsecure=1&type=tcp#DE🇩🇪 | k9de1.djjc.sbs-443 | 635.78ms
-trojan://3628ca8d-6371-45df-879c-2d3e5d110b51@24.199.70.112:443?security=tls&allowInsecure=1&type=tcp#US🇺🇸 | 24.199.70.112-443 | 70ms
-trojan://72d8e820-7926-4ce3-a87c-b6969f425c79@103.235.46.40:443?security=tls&sni=www.baidu.com&allowInsecure=1&type=tcp#HK🇭🇰 | www.baidu.com-443 | 1004.49ms
-trojan://9bb27128-e6d2-4cac-bbd3-beb46c4417f8@hk04.trojanyyds.xyz:443?security=tls&type=tcp#SG🇸🇬 | hk04.trojanyyds.xyz-443 | 487.88ms
-trojan://your_password@104.21.7.241:443?security=tls&sni=aws-sg-1.f1cflineb.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-sg-1.f1cflineb.com#RELAY🚩 | aws-sg-1.f1cflineb.com-443 | 38.42ms
-trojan://mnk8fd@104.21.69.52:443?security=tls&sni=aws-us-oregon-1.f1cflinec.com&alpn=http%2F1.1&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-us-oregon-1.f1cflinec.com#RELAY🚩 | aws-us-oregon-1.f1cflinec.com-443 | 111.24ms
-trojan://your_password@172.67.165.204:443?security=tls&sni=aws-aus-sydney-1.f1cflinea.com&type=ws&path=%2Ff1rocket&host=aws-aus-sydney-1.f1cflinea.com#RELAY🚩 | aws-aus-sydney-1.f1cflinea.com-443 | 36.16ms
-trojan://mnk8fd@172.67.204.230:443?security=tls&sni=aws-us-oregon-1.f1cflinec.com&alpn=http%2F1.1&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-us-oregon-1.f1cflinec.com#RELAY🚩 | aws-us-oregon-1.f1cflinec.com-443 | 2.97ms
-trojan://your_password@aws-ch-zurich-1.f1cflineb.com:443?security=tls&sni=aws-ch-zurich-1.f1cflineb.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-ch-zurich-1.f1cflineb.com#RELAY🚩 | aws-ch-zurich-1.f1cflineb.com-443 | 99.87ms
-trojan://9bb27128-e6d2-4cac-bbd3-beb46c4417f8@my01.trojanyyds.xyz:443?security=tls&type=tcp#SG🇸🇬 | my01.trojanyyds.xyz-443 | 1095.27ms
-trojan://your_password@aws-uk-london-1.f1cflinea.com:443?security=tls&sni=aws-uk-london-1.f1cflinea.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-uk-london-1.f1cflinea.com#RELAY🚩 | aws-uk-london-1.f1cflinea.com-443 | 32.43ms
-trojan://29ea82cf-f956-42b2-a5dc-35feea39e7ff@108.181.24.37:443?security=tls&sni=glc-us1.windowsupdatea.com&type=tcp#RELAY🚩 | glc-us1.windowsupdatea.com-443 | 94.74ms
-trojan://pjdnqv@15.181.162.90:443?security=tls&sni=aws-us-nyc-1.f1rocketnode.com&allowInsecure=1&type=tcp#US🇺🇸 | aws-us-nyc-1.f1rocketnode.com-443 | 31.47ms
-trojan://01596265-168b-46a7-bcb7-25662c7a9546@188.114.98.0:443?security=tls&sni=hdfy7c1.foriran2.eu.org&allowInsecure=1&type=grpc&serviceName=fYn1ncaQMA1foaK1hpquM#RELAY🚩 | hdfy7c1.foriran2.eu.org-443 | 110.97ms
-trojan://9bb27128-e6d2-4cac-bbd3-beb46c4417f8@hk03.trojanyyds.xyz:443?security=tls&type=tcp#SG🇸🇬 | hk03.trojanyyds.xyz-443 | 898.35ms
-trojan://45a99be4-8cb4-4df2-b7a4-42f1a8dea5c1@usa.liangyuandiancloud.com:443?security=tls&allowInsecure=1&type=tcp#DE🇩🇪 | usa.liangyuandiancloud.com-443 | 272.67ms
-trojan://your_password@16.163.157.177:443?security=tls&sni=aws-hk-1.f1rocketnode.com&type=tcp#HK🇭🇰 | aws-hk-1.f1rocketnode.com-443 | 234.63ms
-trojan://b21af1e78d194c2093aabbee770c8529@118.142.17.238:443?security=tls&sni=www.gpt123.one&allowInsecure=1&type=tcp#RELAY🚩 | www.gpt123.one-443 | 52.65ms
-trojan://cd41b9d7-df15-46ad-a778-257b0851525a@hk05.trojanyyds.xyz:443?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | hk05.trojanyyds.xyz-443 | 860.67ms
-trojan://your_password@35.183.238.42:443?security=tls&sni=aws-ca-central-1.f1rocketnode.com&allowInsecure=1&type=tcp#CA🇨🇦 | aws-ca-central-1.f1rocketnode.com-443 | 41.96ms
-trojan://18844%40zxcvbn@49.212.204.123:443?security=tls&allowInsecure=1&type=tcp#JP🇯🇵 | 49.212.204.123-443 | 168.17ms
-trojan://a13820c547fa34c5c45515c12f0cd576@223.111.157.35:10051?security=tls&sni=jp2.91js.pw&allowInsecure=1&type=tcp#CN🇨🇳 | jp2.91js.pw-10051 | 537.38ms
-trojan://your_password@3.27.95.146:443?security=tls&sni=aws-aus-sydney-1.f1rocketnode.com&type=tcp#AU🇦🇺 | aws-aus-sydney-1.f1rocketnode.com-443 | 227.41ms
-trojan://7a73f1dc97a70905870c0c0484b12145@133.242.55.38:443?security=tls&allowInsecure=1&type=tcp#JP🇯🇵 | 133.242.55.38-443 | 182.76ms
-trojan://your_password@aws-se-stockholm-1.f1cflinea.com:443?security=tls&sni=aws-se-stockholm-1.f1cflinea.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-se-stockholm-1.f1cflinea.com#RELAY🚩 | aws-se-stockholm-1.f1cflinea.com-443 | 34.07ms
-trojan://pjdnqv@172.67.216.95:443?security=tls&sni=aws-us-oregon-1.f1cflined.com&alpn=http%2F1.1&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-us-oregon-1.f1cflined.com#RELAY🚩 | aws-us-oregon-1.f1cflined.com-443 | 34.2ms
-trojan://b3d27d09-77fe-431d-9829-6eba7dce20b0@103.224.182.210:443?security=tls&sni=14.earths.team&allowInsecure=1&type=tcp#US🇺🇸 | 14.earths.team-443 | 245.09ms
-trojan://your_password@aws-ar-buenosaires-1.f1cflinea.com:443?security=tls&sni=aws-ar-buenosaires-1.f1cflinea.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-ar-buenosaires-1.f1cflinea.com#RELAY🚩 | aws-ar-buenosaires-1.f1cflinea.com-443 | 33.6ms
-trojan://your_password@aws-uae-1.f1cflineb.com:443?security=tls&sni=aws-uae-1.f1cflineb.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-uae-1.f1cflineb.com#RELAY🚩 | aws-uae-1.f1cflineb.com-443 | 81.22ms
-trojan://your_password@aws-uae-1.f1rocketnode.com:443?security=tls&sni=aws-uae-1.f1rocketnode.com&type=tcp#AE🇦🇪 | aws-uae-1.f1rocketnode.com-443 | 190.28ms
-trojan://3d2ed150-1019-11ee-8007-1239d0255272@206.168.190.219:2087?security=tls&sni=ba24.ir&allowInsecure=1&type=tcp#IR🇮🇷 | ba24.ir-2087 | 279.57ms
-trojan://your_password@aws-ca-central-1.f1cflineb.com:443?security=tls&sni=aws-ca-central-1.f1cflineb.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-ca-central-1.f1cflineb.com#RELAY🚩 | aws-ca-central-1.f1cflineb.com-443 | 52ms
-trojan://9bb27128-e6d2-4cac-bbd3-beb46c4417f8@sk01.trojanyyds.xyz:443?security=tls&type=tcp#SG🇸🇬 | sk01.trojanyyds.xyz-443 | 923.15ms
-trojan://jagoanssh-Aweqdcc@104.21.32.17:443?security=tls&sni=to.ruangguru.com&allowInsecure=1&type=tcp#RELAY🚩 | to.ruangguru.com-443 | 79.9ms
-trojan://f10d81d8-ad4b-300a-825b-f54f515bd06e@sg2.jjzgy.live:443?security=tls&sni=sg2.jjzgy.live&allowInsecure=1&type=tcp#US🇺🇸 | sg2.jjzgy.live-443 | 222.41ms
-trojan://your_password@18.142.122.247:443?security=tls&sni=aws-sg-1.f1rocketnode.com&type=tcp#SG🇸🇬 | aws-sg-1.f1rocketnode.com-443 | 251.01ms
-trojan://your_password@aws-in-mumbai-1.f1cflinea.com:443?security=tls&sni=aws-in-mumbai-1.f1cflinea.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-in-mumbai-1.f1cflinea.com#RELAY🚩 | aws-in-mumbai-1.f1cflinea.com-443 | 9.17ms
-trojan://your_password@104.21.73.195:443?security=tls&sni=aws-aus-sydney-1.f1cflinea.com&type=ws&path=%2Ff1rocket&host=aws-aus-sydney-1.f1cflinea.com#RELAY🚩 | aws-aus-sydney-1.f1cflinea.com-443 | 3.25ms
-trojan://your_password@188.114.99.0:443?security=tls&sni=aws-ge-frankfurt-1.f1cflinea.com&allowInsecure=1&type=ws&path=%2Ff1rocket&host=aws-ge-frankfurt-1.f1cflinea.com#RELAY🚩 | aws-ge-frankfurt-1.f1cflinea.com-443 | 53.7ms
-trojan://your_password@aws-es-madrid-1.f1rocketnode.com:443?security=tls&sni=aws-es-madrid-1.f1rocketnode.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-es-madrid-1.f1rocketnode.com#ES🇪🇸 | aws-es-madrid-1.f1rocketnode.com-443 | 147.83ms
-trojan://pjdnqv@aws-us-dallas-1.f1rocketnode.com:443?security=tls&sni=aws-us-dallas-1.f1rocketnode.com&type=tcp#US🇺🇸 | aws-us-dallas-1.f1rocketnode.com-443 | 41.95ms
-trojan://your_password@aws-uk-london-1.f1cflineb.com:443?security=tls&sni=aws-uk-london-1.f1cflineb.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-uk-london-1.f1cflineb.com#RELAY🚩 | aws-uk-london-1.f1cflineb.com-443 | 75.26ms
-trojan://c46cdd67-aac9-4a8c-9ddb-8ba66ece9286@guolicheng.cc:443?security=tls&allowInsecure=1&type=tcp#RELAY🚩 | guolicheng.cc-443 | 46.84ms
-trojan://29ea82cf-f956-42b2-a5dc-35feea39e7ff@141.193.68.81:443?security=tls&sni=glc-us3.windowsupdatea.com&type=tcp#RELAY🚩 | glc-us3.windowsupdatea.com-443 | 36.23ms
-trojan://your_password@aws-ca-central-1.f1cflinea.com:443?security=tls&sni=aws-ca-central-1.f1cflinea.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-ca-central-1.f1cflinea.com#RELAY🚩 | aws-ca-central-1.f1cflinea.com-443 | 14.08ms
-trojan://pjdnqv@aws-us-nyc-1.f1rocketnode.com:443?security=tls&sni=aws-us-nyc-1.f1rocketnode.com&type=tcp#US🇺🇸 | aws-us-nyc-1.f1rocketnode.com-443 | 12.61ms
-trojan://-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26@67.21.93.242:443?security=tls&sni=upay.com&allowInsecure=1&type=tcp#US🇺🇸 | upay.com-443 | 241.08ms
-trojan://f10d81d8-ad4b-300a-825b-f54f515bd06e@us1.jjzgy.live:443?security=tls&sni=us1.jjzgy.live&allowInsecure=1&type=tcp#US🇺🇸 | us1.jjzgy.live-443 | 224.18ms
-trojan://21c6c7cb-332b-4a0c-9ad7-dff9c3111442@104.21.19.64:443?security=tls&sni=us02web.zoom.us&type=tcp#US🇺🇸 | us02web.zoom.us-443 | 43.22ms
-trojan://a6bebbb9-c6bc-42af-9ea2-434a2164a978@ru01.trojanyyds.xyz:443?security=tls&sni=ru01.trojanyyds.xyz&allowInsecure=1&type=tcp#SG🇸🇬 | ru01.trojanyyds.xyz-443 | 495.08ms
-trojan://81d93f62-15a2-4994-adb9-0b5d906aac7e@138.2.114.255:443?security=tls&allowInsecure=1&type=tcp#KR🇰🇷 | 138.2.114.255-443 | 190.1ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@140.238.212.95:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D140.238.212.95%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 33.11ms
-trojan://vip@104.18.26.94:443?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev&path=%2F%3Fed%3D2560#RELAY🚩 | heihu880.pages.dev-443 | 18.8ms
-trojan://vip@104.16.144.63:443?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev#RELAY🚩 | heihu880.pages.dev-443 | 2.34ms
-trojan://vip@104.18.27.94:443?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev&path=%2F%3Fed%3D2560#RELAY🚩 | heihu880.pages.dev-443 | 2.4ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@212.183.88.156:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D212.183.88.156%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.91ms
-trojan://12345678@198.62.62.4:443?security=tls&sni=7bdfb97a.ikl.pages.dev&type=ws&host=7bdfb97a.ikl.pages.dev&path=%2F7bdfb97a.ikl.pages.dev#RELAY🚩 | 7bdfb97a.ikl.pages.dev-443 | 37.23ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@194.76.18.122:443?sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&allowInsecure=1#RELAY🚩 | icecream.955850.xyz-443 | 2.33ms
-trojan://5453ae26-250d-4e79-b4ec-016baf806865@104.21.23.162:443?security=tls&sni=D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA&type=ws&host=d05f4aa7-92b1-a659-e3b9-695dd2870b3c.131.pp.ua&path=%2FOYzPAeaZdXUq2d6J3gc4aj&fp=chrome&alpn=http%2F1.1#RELAY🚩 | D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA-443 | 190.46ms
-trojan://vip@104.18.12.229:2053?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev&path=%2F%3Fed%3D2560#RELAY🚩 | heihu880.pages.dev-2053 | 2.99ms
-trojan://vip@104.17.48.63:443?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev#RELAY🚩 | heihu880.pages.dev-443 | 2.54ms
-trojan://vip@104.18.11.143:443?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev&path=%2F%3Fed%3D2560#RELAY🚩 | heihu880.pages.dev-443 | 2.59ms
-trojan://a926af96-2cfe-4169-8107-6c5f0d74a938@172.67.207.27:443?security=tls&sni=yu765.taipei108.dpdns.org&type=ws&host=yu765.taipei108.dpdns.org&path=%2F5NB3RVAWa3Uo1P5zFPkui&fp=chrome&alpn=http%2F1.1#RELAY🚩 | yu765.taipei108.dpdns.org-443 | 268.6ms
-trojan://f0f6e76e-e5fe-4e2c-9faf-34832e021eae@104.21.25.95:443?security=tls&sni=DDd.890604.FIlEGear-sG.Me&type=ws&host=ddd.890604.filegear-sg.me&path=%2FmZr1mA5hub7QHHkQBzYO&fp=chrome&alpn=http%2F1.1#RELAY🚩 | DDd.890604.FIlEGear-sG.Me-443 | 232.07ms
-trojan://vip@104.18.10.143:443?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev&path=%2F%3Fed%3D2560#RELAY🚩 | heihu880.pages.dev-443 | 2.88ms
-trojan://vip@172.67.71.187:443?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev&path=%2F%3Fed%3D2560#RELAY🚩 | heihu880.pages.dev-443 | 2.86ms
-trojan://xxoo@us.blazeppn.info:443?security=tls&sni=us.blazeppn.info#US🇺🇸 | us.blazeppn.info-443 | 91.47ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.237:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.237%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.86ms
-trojan://2faaf996-d2b0-440d-8258-81f2b05dd0e4@172.67.75.172:443?security=tls&sni=fwd-refuse-senators-brought.trycloudflare.com&type=ws&host=fwd-refuse-senators-brought.trycloudflare.com&path=%2Ftrojan-argo%3Fed%3D2560#RELAY🚩 | fwd-refuse-senators-brought.trycloudflare.com-443 | 37.81ms
-trojan://vip@172.65.90.53:443?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev&path=%2F%3Fed%3D2560#RELAY🚩 | heihu880.pages.dev-443 | 2.14ms
-trojan://4a3ee276-f50f-46f6-ba4d-13571732ab70@104.21.83.113:443?security=tls&sni=SxcDe3.859886.XYz&type=ws&host=sxcde3.859886.xyz&path=%2FCOp52Dbu3dvwvDWUxOqxq&fp=chrome&alpn=http%2F1.1#RELAY🚩 | SxcDe3.859886.XYz-443 | 30.24ms
-trojan://trojan@45.192.222.112:8443?security=tls&type=ws&sni=store.timimi.dpdns.org&path=%2F%3Fed%3D2560&host=store.timimi.dpdns.org#RELAY🚩 | store.timimi.dpdns.org-8443 | 98.81ms
-trojan://vip@104.18.13.229:2053?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev&path=%2F%3Fed%3D2560#RELAY🚩 | heihu880.pages.dev-2053 | 2.9ms
-trojan://vip@172.67.68.101:443?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev&path=%2F%3Fed%3D2560#RELAY🚩 | heihu880.pages.dev-443 | 2.8ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.227:443?type=ws&sni=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.227%3A443&host=icecream.955850.xyz#RELAY🚩 | icecream.955850.xyz-443 | 2.96ms
-trojan://53249200-30ff-436f-a032-0bb00605f8f9@104.21.24.172:443?security=tls&sni=3derty.852224.dpdns.org&type=ws&host=3derty.852224.dpdns.org&path=%2FYPTDHLX8qjvTU5JqXZxjQ5ILc&fp=chrome&alpn=http%2F1.1#RELAY🚩 | 3derty.852224.dpdns.org-443 | 428.04ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.254:443?sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&allowInsecure=1#RELAY🚩 | icecream.955850.xyz-443 | 2.94ms
-trojan://vip@172.67.179.98:443?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev&path=%2F%3Fed%3D2560#RELAY🚩 | heihu880.pages.dev-443 | 3.25ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@138.2.107.107:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D138.2.107.107%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.7ms
-trojan://vip@104.18.42.98:443?security=tls&sni=heihu880.pages.dev&type=ws&host=heihu880.pages.dev&path=%2F%3Fed%3D2560#RELAY🚩 | heihu880.pages.dev-443 | 2.22ms
-trojan://74260665780162200@allowing-owl.shiner427.skin:443?sni=allowing-owl.shiner427.skin#CA🇨🇦 | allowing-owl.shiner427.skin-443 | 81.94ms
-trojan://15b24b56-d667-4fa8-b548-f3dc942fb461@104.21.15.232:443?security=tls&sni=ab2c7f0b-bf1b-4eb3-9884-256f4de3d.2030.pp.ua&type=ws&host=ab2c7f0b-bf1b-4eb3-9884-256f4de3d.2030.pp.ua&path=%2F4p35eUnmGxQ8YJFJxz&fp=chrome&alpn=http%2F1.1#RELAY🚩 | ab2c7f0b-bf1b-4eb3-9884-256f4de3d.2030.pp.ua-443 | 273.81ms
-trojan://74260665780162200@infinite-goose.shiner427.skin:443?sni=infinite-goose.shiner427.skin#IE🇮🇪 | infinite-goose.shiner427.skin-443 | 111.18ms
-trojan://2c605663-b89a-5734-a9d6-97d4743d72cf@dozo01.flztjc.top:8313?allowInsecure=0&sni=hk-13-568.flztjc.net#HK🇭🇰 | hk-13-568.flztjc.net-8313 | 507.36ms
-trojan://74260665780162200@noble-minnow.shiner427.skin:443?sni=noble-minnow.shiner427.skin#FR🇫🇷 | noble-minnow.shiner427.skin-443 | 163.1ms
-trojan://74260665780162200@infinite-goose.shiner427.skin:443?sni=infinite-goose.shiner427.skin#IE🇮🇪 | infinite-goose.shiner427.skin-443 | 228.07ms
-trojan://74260665780162200@allowing-owl.shiner427.skin:443?allowInsecure=1&sni=allowing-owl.shiner427.skin#CA🇨🇦 | allowing-owl.shiner427.skin-443 | 30.85ms
-trojan://bpb-trojan@bg.madison.eu.org:443?allowInsecure=1&sni=skwygx.top&type=ws&host=skwygx.top&path=%2Ftr%3Fed%3D2560#RELAY🚩 | skwygx.top-443 | 57.07ms
-trojan://74260665780162200@possible-tiger.shiner427.skin:443?allowInsecure=0&sni=possible-tiger.shiner427.skin#US🇺🇸 | possible-tiger.shiner427.skin-443 | 152.12ms
-trojan://2faaf996-d2b0-440d-8258-81f2b05dd0e4@172.67.75.172:443?allowInsecure=0&sni=fwd-refuse-senators-brought.trycloudflare.com&type=ws&path=%2Ftrojan-argo%3Fed%3D2560#RELAY🚩 | fwd-refuse-senators-brought.trycloudflare.com-443 | 2.82ms
-trojan://a926af96-2cfe-4169-8107-6c5f0d74a938@172.67.207.27:443?allowInsecure=0&sni=yu765.taipei108.dpdns.org&alpn=http%2F1.1&type=ws&path=%2F5NB3RVAWa3Uo1P5zFPkui#RELAY🚩 | yu765.taipei108.dpdns.org-443 | 2.68ms
-trojan://15153c1d-fc81-4b2a-9689-7b4e4a72dce5@172.67.188.77:443?allowInsecure=0&sni=edfr4.890604.dpdns.org&alpn=http%2F1.1&type=ws&path=%2Fl6lvY4hFZriQDBimbKYmPIggy#RELAY🚩 | edfr4.890604.dpdns.org-443 | 245.83ms
-trojan://4a3ee276-f50f-46f6-ba4d-13571732ab70@104.21.83.113:443?allowInsecure=0&sni=SxcDe3.859886.XYz&alpn=http%2F1.1&type=ws&path=%2FCOp52Dbu3dvwvDWUxOqxq#RELAY🚩 | SxcDe3.859886.XYz-443 | 2.51ms
-trojan://aTArbZ2F0E@172.66.168.213:443?allowInsecure=0&sni=uSa-vp-27.bLAzECLOUD.SITE&type=ws&path=%2Flinkvkws#RELAY🚩 | uSa-vp-27.bLAzECLOUD.SITE-443 | 38.57ms
-trojan://74260665780162200@52.60.142.77:443?allowInsecure=0&sni=allowing-owl.shiner427.skin#CA🇨🇦 | allowing-owl.shiner427.skin-443 | 44.72ms
-trojan://5453ae26-250d-4e79-b4ec-016baf806865@104.21.23.162:443?allowInsecure=0&sni=D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA&alpn=http%2F1.1&type=ws&path=%2FOYzPAeaZdXUq2d6J3gc4aj#RELAY🚩 | D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA-443 | 2.59ms
-trojan://74260665780162200@44.241.243.252:443?allowInsecure=0&sni=possible-tiger.shiner427.skin#US🇺🇸 | possible-tiger.shiner427.skin-443 | 129.35ms
-trojan://74260665780162200@grown-mackerel.shiner427.skin:443?sni=grown-mackerel.shiner427.skin#FR🇫🇷 | grown-mackerel.shiner427.skin-443 | 256.18ms
-trojan://f82fb954-06a1-4f0b-9180-17e07585b61f@104.21.23.162:443?allowInsecure=0&sni=6tghjk.131.pp.ua&type=ws&host=6tghjk.131.pp.ua&path=%2FYu29UN3Yz8hcnI3SlZor0#RELAY🚩 | 6tghjk.131.pp.ua-443 | 227.35ms
-trojan://74260665780162200@grown-doberman.shiner427.skin:443?allowInsecure=0&sni=grown-doberman.shiner427.skin#FR🇫🇷 | grown-doberman.shiner427.skin-443 | 396.44ms
-trojan://feac8d6d-8fcf-4ef1-9ad0-18833c9fca11@green.cdntencentmusic.com:28505?allowInsecure=0&sni=green.cdntencentmusic.com#TW🇹🇼 | green.cdntencentmusic.com-28505 | 388.08ms
-trojan://4GA1yNVbxOmx5deR3oj6CgKcHxL1aOSN@mortify.koreanbbq.link:8123?allowInsecure=0&sni=mortify.koreanbbq.link#IN🇮🇳 | mortify.koreanbbq.link-8123 | 379.71ms
-trojan://4GA1yNVbxOmx5deR3oj6CgKcHxL1aOSN@mortify.koreanbbq.link:8123#IN🇮🇳 | mortify.koreanbbq.link-8123 | 264.48ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@212.183.88.194:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D212.183.88.194%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.53ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@212.183.88.156:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D212.183.88.156%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 3.15ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@212.183.88.29:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D212.183.88.29%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.93ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@185.133.35.243:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D185.133.35.243%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.89ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@185.133.35.141:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D185.133.35.141%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 3.13ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@140.238.158.238:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D140.238.158.238%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.8ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@140.238.212.95:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D140.238.212.95%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.83ms
-trojan://74260665780162200@ultimate-lemming.shiner427.skin:443?allowInsecure=0&sni=ultimate-lemming.shiner427.skin#DE🇩🇪 | ultimate-lemming.shiner427.skin-443 | 332.89ms
-trojan://74260665780162200@cuddly-finch.shiner427.skin:443?allowInsecure=0&sni=cuddly-finch.shiner427.skin#DE🇩🇪 | cuddly-finch.shiner427.skin-443 | 260ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.254:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.254%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 3.3ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.237:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.237%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.82ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.227:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.227%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.63ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.89:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.89%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.87ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.51:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.51%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.91ms
-trojan://bpb-trojan@us.madison.eu.org:443?allowInsecure=1&sni=skwygx.top&type=ws&host=skwygx.top&path=%2Ftr%3Fed%3D2560#RELAY🚩 | skwygx.top-443 | 3.19ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@194.76.18.122:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D194.76.18.122%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.56ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@45.67.215.153:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D45.67.215.153%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.78ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@45.67.215.234:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D45.67.215.234%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.55ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@45.67.215.5:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D45.67.215.5%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.75ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@138.2.107.107:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D138.2.107.107%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.69ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@192.0.54.184:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D192.0.54.184%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 3.18ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@160.123.255.199:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D160.123.255.199%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 2.6ms
-trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@160.123.255.243:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D160.123.255.243%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 3.17ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.211:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.211-443+%7C+89.88ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.139.37:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.139.37-443+%7C+90.09ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.204.83:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.204.83-443+%7C+90.03ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.204.75:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.204.75-443+%7C+90.28ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.219:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.219-443+%7C+90.42ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.225:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.225-443+%7C+89.62ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.59.166:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.59.166-443+%7C+83.76ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.59.160:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.59.160-443+%7C+84.68ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.18.235:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.18.235-443+%7C+88.65ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.169.128:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.169.128-443+%7C+90.33ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.126.193:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.95.126.193-443+%7C+89.77ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.83.12:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.83.12-443+%7C+88.95ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@198.244.231.26:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+198.244.231.26-443+%7C+75.02ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@37.59.21.130:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+37.59.21.130-443+%7C+84.71ms
-ss://YWVzLTEyOC1jZmI6c2hhZG93c29ja3M=@109.201.152.181:443#NL%F0%9F%87%B3%F0%9F%87%B1+%7C+109.201.152.181-443+%7C+82.07ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.59.169:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.59.169-443+%7C+86.72ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.98.94:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.95.98.94-443+%7C+90.09ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@198.244.231.28:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+198.244.231.28-443+%7C+77.17ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@37.59.21.131:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+37.59.21.131-443+%7C+85.08ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.212:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.212-443+%7C+103.87ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.224:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.224-443+%7C+90.04ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.171.67:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.171.67-443+%7C+90.12ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.125.11:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.95.125.11-443+%7C+89.92ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@198.244.231.25:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+198.244.231.25-443+%7C+75.13ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.110.171:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.110.171-443+%7C+103.59ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.159.104.104:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.159.104.104-443+%7C+86.7ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.158.204.17:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.158.204.17-443+%7C+82.08ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@198.244.231.27:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+198.244.231.27-443+%7C+75.57ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.157.210:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.95.157.210-443+%7C+85.24ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.158.202.190:443#NL%F0%9F%87%B3%F0%9F%87%B1+%7C+51.158.202.190-443+%7C+83.77ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.159.222.19:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.159.222.19-443+%7C+86.44ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.159.222.36:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.159.222.36-443+%7C+87.07ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.158.61.155:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.158.61.155-443+%7C+87.29ms
-ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@192.71.166.102:989#GR%F0%9F%87%AC%F0%9F%87%B7+%7C+192.71.166.102-989+%7C+144.23ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.158.200.141:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.158.200.141-443+%7C+82.78ms
-ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@185.123.101.241:989#TR%F0%9F%87%B9%F0%9F%87%B7+%7C+185.123.101.241-989+%7C+122.02ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.99.192:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+141.95.99.192-443+%7C+90.13ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.196:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.196-443+%7C+103.6ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.18.105:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.18.105-443+%7C+88.53ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.126.108:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.95.126.108-443+%7C+90.04ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.204.79:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.204.79-443+%7C+88.85ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.138.150:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.138.150-443+%7C+89.53ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.207:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.207-443+%7C+89.97ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.59.163:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.59.163-443+%7C+84.34ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.110.167:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.110.167-443+%7C+103.39ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.110.240:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.110.240-443+%7C+103.39ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.204.78:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.204.78-443+%7C+90ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.18.107:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.18.107-443+%7C+88.95ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.204.74:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.204.74-443+%7C+89.78ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.83.15:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.83.15-443+%7C+89.13ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.94.143.221:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.94.143.221-443+%7C+88.45ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.59.161:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.59.161-443+%7C+86.23ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.71.220:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.71.220-443+%7C+105.05ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.59.165:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.59.165-443+%7C+86.05ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.55.84:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.55.84-443+%7C+103.89ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.71.221:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.71.221-443+%7C+103.58ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.181:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.181-443+%7C+104.1ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.110.169:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.110.169-443+%7C+100.62ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.186:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.186-443+%7C+103.49ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.211:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.211-443+%7C+103.37ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.110.170:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.110.170-443+%7C+103.51ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.171.97:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.171.97-443+%7C+89.91ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.19.210:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.19.210-443+%7C+89.18ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.209:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.209-443+%7C+103.71ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.110.168:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.110.168-443+%7C+103.8ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.208:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.208-443+%7C+89.8ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.64.70:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.95.64.70-443+%7C+89.69ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.138.149:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.138.149-443+%7C+89.6ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.210:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.210-443+%7C+89.52ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.138.148:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.138.148-443+%7C+89.38ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@198.244.231.34:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+198.244.231.34-443+%7C+76.37ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@37.59.21.132:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+37.59.21.132-443+%7C+84.43ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@198.244.231.74:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+198.244.231.74-443+%7C+75.65ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.84.198:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.84.198-443+%7C+88.87ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.183:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.183-443+%7C+103.86ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.195:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.195-443+%7C+103.3ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.204.82:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.204.82-443+%7C+90.33ms
-ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.139.36:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.139.36-443+%7C+90ms
-ss://YWVzLTI1Ni1nY206UUpia0JNM1lyRA==@38.244.10.137:54535#US%F0%9F%87%BA%F0%9F%87%B8+%7C+38.244.10.137-54535+%7C+67.21ms
-ss://YWVzLTI1Ni1nY206UVo0TDhaREc3NU9GTUZSVQ==@183.2.157.135:15012#CN%F0%9F%87%A8%F0%9F%87%B3+%7C+183.2.157.135-15012+%7C+226.12ms
-ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.150.109.89:11389#KR%F0%9F%87%B0%F0%9F%87%B7+%7C+221.150.109.89-11389+%7C+185.08ms
-ss://YWVzLTI1Ni1nY206UVo0TDhaREc3NU9GTUZSVQ==@183.2.157.135:15012#CN%F0%9F%87%A8%F0%9F%87%B3+%7C+183.2.157.135-15012+%7C+225.53ms
-ss://YWVzLTI1Ni1nY206RkI4M1VMWFFSNUxIRjgySw==@183.2.157.135:15010#CN%F0%9F%87%A8%F0%9F%87%B3+%7C+183.2.157.135-15010+%7C+225.21ms
-ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@p231.panda004.net:11389#KR%F0%9F%87%B0%F0%9F%87%B7+%7C+p231.panda004.net-11389+%7C+1302.6ms
-ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@p222.panda001.net:15098#KR%F0%9F%87%B0%F0%9F%87%B7+%7C+p222.panda001.net-15098+%7C+1677.46ms
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.24:38388#VN%F0%9F%87%BB%F0%9F%87%B3+%7C+103.186.154.24-38388+%7C+244.73ms
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.21:38388#VN%F0%9F%87%BB%F0%9F%87%B3+%7C+103.186.154.21-38388+%7C+240.29ms
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.31:38388#VN%F0%9F%87%BB%F0%9F%87%B3+%7C+103.186.154.31-38388+%7C+239.25ms
-ss://YWVzLTI1Ni1jZmI6YXdzcHMwNTAx@34.217.73.72:443#US%F0%9F%87%BA%F0%9F%87%B8+%7C+34.217.73.72-443+%7C+81.71ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5MWE0MWY0ZTAyZGM=@hkkh11v1.xpmc.cc:31785#HK%F0%9F%87%AD%F0%9F%87%B0+%7C+hkkh11v1.xpmc.cc-31785+%7C+331.79ms
-ss://Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY=@103.149.183.61:8388#HK%F0%9F%87%AD%F0%9F%87%B0+%7C+103.149.183.61-8388+%7C+215.21ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0MHNybWR4cm0zeHlqbnZxejlld2x4YjJteXE3cmp1dg==@118.163.198.43:2377#TW%F0%9F%87%B9%F0%9F%87%BC+%7C+118.163.198.43-2377+%7C+197.7ms
-ss://cmM0LW1kNTplZmFuY2N5dW4=@cn01.efan8867801.xyz:8766#CN%F0%9F%87%A8%F0%9F%87%B3+%7C+cn01.efan8867801.xyz-8766+%7C+548.94ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMzA5NjFmMGE4YTY=@103.140.136.242:19499#JP%F0%9F%87%AF%F0%9F%87%B5+%7C+103.140.136.242-19499+%7C+160.61ms
-ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@p080.panda001.net:36379#KR%F0%9F%87%B0%F0%9F%87%B7+%7C+p080.panda001.net-36379+%7C+704.2ms
-ss://cmM0LW1kNTplZmFuY2N5dW4=@cn01.efan8867801.xyz:8774#CN%F0%9F%87%A8%F0%9F%87%B3+%7C+cn01.efan8867801.xyz-8774+%7C+330.94ms
-ss://YWVzLTI1Ni1nY206UUpia0JNM1lyRA==@38.244.10.137:54535#US%F0%9F%87%BA%F0%9F%87%B8+%7C+38.244.10.137-54535+%7C+68.44ms
-ss://YWVzLTI1Ni1jZmI6eWlqaWFuMDUwMw==@13.250.27.89:443#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+13.250.27.89-443+%7C+230.28ms
-ss://YWVzLTI1Ni1jZmI6eWlqaWFuMDUwMw==@13.229.110.124:443#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+13.229.110.124-443+%7C+223.87ms
-ss://YWVzLTI1Ni1jZmI6eWlqaWFuMDUwMw==@54.251.26.168:443#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+54.251.26.168-443+%7C+224.18ms
-ss://c3M6Ly9ZV1Z6TFRJMU5pMWpabUk2WVhkemNITXdOVEF4@34.217.73.72:443#US%F0%9F%87%BA%F0%9F%87%B8+%7C+34.217.73.72-443+%7C+81.71ms
-ss://c3M6Ly9ZMmhoWTJoaE1qQXRhV1YwWmpwaGMyUXhNak0wTlRZ@103.149.183.61:8388#HK%F0%9F%87%AD%F0%9F%87%B0+%7C+103.149.183.61-8388+%7C+207.15ms
-ss://c3M6Ly9ZV1Z6TFRJMU5pMWpabUk2Y1hkbGNsSkZWMUZBUUE=@p080.panda001.net:36379#KR%F0%9F%87%B0%F0%9F%87%B7+%7C+p080.panda001.net-36379+%7C+407.82ms
-ss://c3M6Ly9ZV1Z6TFRJMU5pMW5ZMjA2VVVwaWEwSk5NMWx5UkE=@38.244.10.137:54535#US%F0%9F%87%BA%F0%9F%87%B8+%7C+38.244.10.137-54535+%7C+67.53ms
-ss://c3M6Ly9ZV1Z6TFRJMU5pMWpabUk2ZVdscWFXRnVNRFV3TXc=@13.250.27.89:443#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+13.250.27.89-443+%7C+226.31ms
-ss://c3M6Ly9ZV1Z6TFRJMU5pMWpabUk2ZVdscWFXRnVNRFV3TXc=@13.229.110.124:443#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+13.229.110.124-443+%7C+226.18ms
-ss://c3M6Ly9ZV1Z6TFRJMU5pMWpabUk2ZVdscWFXRnVNRFV3TXc=@54.251.26.168:443#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+54.251.26.168-443+%7C+229.81ms
-ss://cmM0LW1kNTplZmFuY2N5dW4=@cn01.efan8867801.xyz:8774#CN%F0%9F%87%A8%F0%9F%87%B3+%7C+cn01.efan8867801.xyz-8774+%7C+359.68ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0MHNybWR4cm0zeHlqbnZxejlld2x4YjJteXE3cmp1dg==@118.163.198.43:2377#TW%F0%9F%87%B9%F0%9F%87%BC+%7C+118.163.198.43-2377+%7C+195.99ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5MWE0MWY0ZTAyZGM=@hkkh11v1.xpmc.cc:31785#HK%F0%9F%87%AD%F0%9F%87%B0+%7C+hkkh11v1.xpmc.cc-31785+%7C+215.92ms
-ss://cmM0LW1kNTplZmFuY2N5dW4=@cn01.efan8867801.xyz:8766#CN%F0%9F%87%A8%F0%9F%87%B3+%7C+cn01.efan8867801.xyz-8766+%7C+387.81ms
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMzA5NjFmMGE4YTY=@103.140.136.242:19499#JP%F0%9F%87%AF%F0%9F%87%B5+%7C+103.140.136.242-19499+%7C+167.58ms
+vmess://eyJhZGQiOiIxNDEuOTUuNzUuMTQ4IiwiYWlkIjoiMCIsImhvc3QiOiJzb2Z0OTguaXIiLCJpZCI6ImNlNzZkMzJlLTNiYzctNGE0Zi1iZjJjLWFiZGRiODkzYmVkNyIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiNDQzIiwicHMiOiJJUlx1ZDgzY1x1ZGRlZVx1ZDgzY1x1ZGRmNyB8IHNvZnQ5OC5pci00NDMgfCA4OTguOTZtcyIsInNjeSI6ImFlcy0xMjgtZ2NtIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Imh0dHAiLCJ2IjoiMiJ9
+vmess://eyJhZGQiOiIxMDQuMjEuNjkuNDQiLCJhaWQiOiIwIiwiaG9zdCI6InB0Mi12bWVzcy5zc2htYXgueHl6IiwiaWQiOiJhMTc0ZTQ5Yy1iNjlhLTQ1NGMtYThiZC05NGRlYmM3ZTRmNTkiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6IjgwIiwicHMiOiJVU1x1ZDgzY1x1ZGRmYVx1ZDgzY1x1ZGRmOCB8IHB0Mi12bWVzcy5zc2htYXgueHl6LTgwIHwgNzUwLjk0bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6ImF1dG8iLCJ2IjoiMiJ9
+vmess://eyJhZGQiOiI1MS43OS4yOC4yNTAiLCJhaWQiOiIwIiwiaG9zdCI6InNwZWVkdGVzdC5uZXQiLCJpZCI6IjU4ZmUxNTQyLTUyOTAtNDBhZC04MTVhLTc3NzA3YTgxYWZlNSIsIm5ldCI6InRjcCIsInBhdGgiOiJcL0lPZWJoTE1obDFDWXBrVm0yM1VDT0tZaG1tIiwicG9ydCI6IjgwIiwicHMiOiJVU1x1ZDgzY1x1ZGRmYVx1ZDgzY1x1ZGRmOCB8IHNwZWVkdGVzdC5uZXQtODAgfCA3MS4xM21zIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJodHRwIiwidiI6IjIifQ==
+vmess://eyJhZGQiOiIxNzIuNjcuMjA0Ljg0IiwiYWlkIjoiMCIsImhvc3QiOiJubzEtdm1lc3Muc3NobWF4Lnh5eiIsImlkIjoiNzUzZDBkODMtM2Y1Yi00ODIxLTg2MGUtMDgyZjBiM2RiNjA5IiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzcyIsInBvcnQiOiI4MCIsInBzIjoiVVNcdWQ4M2NcdWRkZmFcdWQ4M2NcdWRkZjggfCBubzEtdm1lc3Muc3NobWF4Lnh5ei04MCB8IDE3NS41OG1zIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJhdXRvIiwidiI6IjIifQ==
+vmess://eyJhZGQiOiIxMDQuMTYuMTA5LjQ1IiwiYWlkIjoiMCIsImhvc3QiOiJiLmJhcm1hc2kyLndvcmtlcnMuZGV2IiwiaWQiOiJEQ0U3NjA2MS1FRTY1LTQ5REItOTk3Qy1BNkE4ODBEQURFM0EiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3NwZWVkdGVzdFwvS2Fuc2FzLmtvdGljay5zaXRlIiwicG9ydCI6IjQ0MyIsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCBiLmJhcm1hc2kyLndvcmtlcnMuZGV2LTQ0MyB8IDgzLjY3bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiYi5iYXJtYXNpMi53b3JrZXJzLmRldiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9
+vmess://eyJhZGQiOiJydTEtdm1lc3Muc3NobWF4Lnh5eiIsImFpZCI6IjAiLCJob3N0IjoicnUxLXZtZXNzLnNzaG1heC54eXoiLCJpZCI6ImZkZGIzNzgxLTdlMTUtNDczMS1hOTMzLTk0ZGIxMTBiNGJiYyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0IjoiODAiLCJwcyI6IlVTXHVkODNjXHVkZGZhXHVkODNjXHVkZGY4IHwgcnUxLXZtZXNzLnNzaG1heC54eXotODAgfCAyMTMuOTJtcyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=
+vmess://eyJhZGQiOiIxNTQuMTk4LjIwOS41MiIsImFpZCI6IjAiLCJob3N0IjoiIiwiaWQiOiJlZTE0ZjZlMC1lNjUyLTQyNjAtZmZiNS1jMmE3ZmQ0ZGIzNWEiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOiI4MCIsInBzIjoiVVNcdWQ4M2NcdWRkZmFcdWQ4M2NcdWRkZjggfCAxNTQuMTk4LjIwOS41Mi04MCB8IDE5MC43NW1zIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJhdXRvIiwidiI6IjIifQ==
+vmess://eyJhZGQiOiI0NS44NS4xMTkuMjA3IiwiYWlkIjoiMCIsImhvc3QiOiJkZWxpY2F0ZS1tZWFkb3ctYjcyOC5tYWhkaWhhaml6YWRlMTIzMDgwMDE5NjI0LndvcmtlcnMuZGV2IiwiaWQiOiIyRjA5NDg0NS1FMkJELUVCRjctREVCNy05OTU5OTI0MzZGQUYiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL0thbnNhcy5rb3RpY2suc2l0ZVwvc3BlZWR0ZXN0IiwicG9ydCI6IjQ0MyIsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCBkZWxpY2F0ZS1tZWFkb3ctYjcyOC5tYWhkaWhhaml6YWRlMTIzMDgwMDE5NjI0LndvcmtlcnMuZGV2LTQ0MyB8IDg3Ljc3bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiZGVsaWNhdGUtbWVhZG93LWI3MjgubWFoZGloYWppemFkZTEyMzA4MDAxOTYyNC53b3JrZXJzLmRldiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9
+vmess://eyJhZGQiOiI4MC45Mi4yMDUuMTEyIiwiYWlkIjoiMCIsImhvc3QiOiIiLCJpZCI6IjRjOTBiYTc1LTIzMGItNGY4Yi1iYmZmLThlZmEwZWIwNDE1ZiIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6IjQ0MyIsInBzIjoiVVNcdWQ4M2NcdWRkZmFcdWQ4M2NcdWRkZjggfCA4MC45Mi4yMDUuMTEyLTQ0MyB8IDQ3LjcybXMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
+vmess://eyJhZGQiOiIxODIuMTYuMS4xOTQiLCJhaWQiOiI2NCIsImhvc3QiOiIiLCJpZCI6IjAwYTFkYTE0LWQ1NWYtNWY3NS1lMzQ2LTc5Yjk4NWUxYTcyMyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvb3B0XC92aWRlb1wvaW1hZ2VzIiwicG9ydCI6IjgwIiwicHMiOiJCWVx1ZDgzY1x1ZGRlN1x1ZDgzY1x1ZGRmZSB8IGludGVybmV0LmxpZmUuY29tLmJ5LTgwIHwgNzQ5LjI5bXMiLCJzY3kiOiJhdXRvIiwic25pIjoiaW50ZXJuZXQubGlmZS5jb20uYnkiLCJ0bHMiOiIiLCJ0eXBlIjoiYXV0byIsInYiOiIyIn0=
+vmess://eyJhZGQiOiI0Ny4yNTQuMzAuMjQzIiwiYWlkIjoiMCIsImhvc3QiOiIiLCJpZCI6IjQ2OGNkZTNkLTI2YjUtNDAwNy1hMjBhLTFjZDE5ZjQ2ZDVkNiIsIm5ldCI6IndzIiwicGF0aCI6IlwvS1h3SEdDcklWRzROWWlCMiIsInBvcnQiOiI4MCIsInBzIjoiVVNcdWQ4M2NcdWRkZmFcdWQ4M2NcdWRkZjggfCA0Ny4yNTQuMzAuMjQzLTgwIHwgMzguOThtcyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
+vmess://eyJhZGQiOiJhLm1hYzJ3aW4udG9wIiwiYWlkIjoiMCIsImhvc3QiOiJpY3UubWFjMndpbi50b3AiLCJpZCI6IjY1YWUzNWQxLTAxYjgtNDJlNC04MzczLTAwZDAxNjIzYzZlZCIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6IjgwODAiLCJwcyI6IkpQXHVkODNjXHVkZGVmXHVkODNjXHVkZGY1IHwgaWN1Lm1hYzJ3aW4udG9wLTgwODAgfCAxODQuNDFtcyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
+vmess://eyJhZGQiOiIxODguMTE0Ljk3LjciLCJhaWQiOiIxIiwiaG9zdCI6IndheW5uLm1ha2V1cCIsImlkIjoiMDNmY2M2MTgtYjkzZC02Nzk2LTZhZWQtOGEzOGM5NzVkNTgxIiwibmV0Ijoid3MiLCJwYXRoIjoibGlua3Z3cyIsInBvcnQiOiI0NDMiLCJwcyI6IlVTXHVkODNjXHVkZGZhXHVkODNjXHVkZGY4IHwgd2F5bm4ubWFrZXVwLTQ0MyB8IDE1OC45Nm1zIiwic2N5IjoiYXV0byIsInNuaSI6IndheW5uLm1ha2V1cCIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9
+vmess://eyJhZGQiOiJrYW5zYXMua290aWNrLnNpdGUiLCJhaWQiOiIwIiwiaG9zdCI6ImthbnNhcy5rb3RpY2suc2l0ZSIsImlkIjoiMmYwOTQ4NDUtZTJiZC1lYmY3LWRlYjctOTk1OTkyNDM2ZmFmIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9zcGVlZHRlc3QiLCJwb3J0IjoiNDQzIiwicHMiOiJVU1x1ZDgzY1x1ZGRmYVx1ZDgzY1x1ZGRmOCB8IGthbnNhcy5rb3RpY2suc2l0ZS00NDMgfCAxNjkuNjdtcyIsInNjeSI6ImF1dG8iLCJzbmkiOiJrYW5zYXMua290aWNrLnNpdGUiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiYXV0byIsInYiOiIyIn0=
+vmess://eyJ2IjoiMiIsInBzIjoiSEtcdWQ4M2NcdWRkZWRcdWQ4M2NcdWRkZjAgfCBmYTAxM2E0ZC1zd2QzNDAtdDJmcXB2LTExdmN5LmhnYzEudGNwYmJyLm5ldC04MDgwIHwgMjI2LjIybXMiLCJhZGQiOiJmYTAxM2E0ZC1zd2QzNDAtdDJmcXB2LTExdmN5LmhnYzEudGNwYmJyLm5ldCIsInBvcnQiOiI4MDgwIiwidHlwZSI6Im5vbmUiLCJpZCI6Ijk5YTVmNTcwLTdmZTQtMTFlZi1hYWE3LWYyM2M5MWNmYmJjOSIsImFpZCI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsImhvc3QiOiJmYTAxM2E0ZC1zd2QzNDAtdDJmcXB2LTExdmN5LmhnYzEudGNwYmJyLm5ldCIsInRscyI6IiJ9
+vmess://eyJhZGQiOiIxMDQuMjEuMTEyLjEiLCJ2IjoiMiIsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCBjYzJkNC45ODg5ODguc2hvcC0yMDUzIHwgNDcuMzNtcyIsInBvcnQiOjIwNTMsImlkIjoiOGY3OGU3MDktMmM1Zi00YzE5LTlmNDQtYjViNWY4MGFiNzRjIiwiYWlkIjoiMCIsIm5ldCI6IndzIiwidHlwZSI6IiIsImhvc3QiOiJjYzJkNC45ODg5ODguc2hvcCIsInBhdGgiOiJcLyIsInRscyI6InRscyJ9
+vmess://eyJhZGQiOiIxNDEuMTAxLjEyMC4yNTMiLCJ2IjoiMiIsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCAxNzQ2ODgyODkxLnNwZWVkLmFkbC5jY2NwLmZyZWVmbHkucHAudWEtMjA5NiB8IDMxNC4xMm1zIiwicG9ydCI6MjA5NiwiaWQiOiIzODFjYjZkMS02YWQ0LTQ5MDktODQ5NC1iOGQ3ODZjZjc4Y2UiLCJhaWQiOiIwIiwibmV0Ijoid3MiLCJ0eXBlIjoiIiwiaG9zdCI6IjE3NDY4ODI4OTEuc3BlZWQuYWRsLmNjY3AuZnJlZWZseS5wcC51YSIsInBhdGgiOiJcLyIsInRscyI6InRscyJ9
+vmess://eyJhZGQiOiJlNGQxNzNlYS1zd2QzNDAtc3lreGNiLTFuaHA3LmhnYzEudGNwYmJyLm5ldCIsInYiOiIyIiwicHMiOiJIS1x1ZDgzY1x1ZGRlZFx1ZDgzY1x1ZGRmMCB8IGU0ZDE3M2VhLXN3ZDM0MC1zeWt4Y2ItMW5ocDcuaGdjMS50Y3BiYnIubmV0LTgwODAgfCAyMTguNDZtcyIsInBvcnQiOjgwODAsImlkIjoiNWZjOWM5YWEtZWE0Ny0xMWVkLTgzOTctZjIzYzkxM2M4ZDJiIiwiYWlkIjoiMCIsIm5ldCI6IndzIiwidHlwZSI6IiIsImhvc3QiOiIiLCJwYXRoIjoiXC8iLCJ0bHMiOiIifQ==
+vmess://eyJhZGQiOiIxMDQuMjEuMzIuMSIsImFpZCI6MCwiYWxsb3dpbnNlY3VyZSI6MSwiaG9zdCI6InJhazJkMS43NzcyNjkueHl6IiwiaWQiOiI5OTYwMTZmNy1kYTg5LTQ1ZjEtYjNiNC01NTViYzc5OWVkODYiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOjIwNTMsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCByYWsyZDEuNzc3MjY5Lnh5ei0yMDUzIHwgNzAuMjFtcyIsInNuaSI6InJhazJkMS43NzcyNjkueHl6IiwidGxzIjoidGxzIiwidiI6Mn0=
+vmess://eyJhZGQiOiIxMDQuMjEuMTEyLjEiLCJ2IjoiMiIsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCByYWsyZDIuNzc3MjY5Lnh5ei0yMDgzIHwgNjEuNjFtcyIsInBvcnQiOjIwODMsImlkIjoiOTk2MDE2ZjctZGE4OS00NWYxLWIzYjQtNTU1YmM3OTllZDg2IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwidHlwZSI6IiIsImhvc3QiOiJyYWsyZDIuNzc3MjY5Lnh5eiIsInBhdGgiOiJcLyIsInRscyI6InRscyJ9
+vmess://eyJhZGQiOiJjbG91ZGdldHNlcnZpY2UubWNsb3Vkc2VydmljZS5zaXRlIiwidiI6IjIiLCJwcyI6IlJFTEFZXHVkODNkXHVkZWE5IHwgRnJhLVZwLTEyMy5CTGFaRUNMT1VELlNpdGUtNDQzIHwgNzkuNzltcyIsInBvcnQiOjQ0MywiaWQiOiIzN2Y0NjRjYi1iODI2LTQyNzgtOWJmOC0xMWJkZjFlYzg5MmIiLCJhaWQiOiIwIiwibmV0Ijoid3MiLCJ0eXBlIjoiIiwiaG9zdCI6IkZyYS1WcC0xMjMuQkxhWkVDTE9VRC5TaXRlIiwicGF0aCI6IlwvbGludmt3cyIsInRscyI6InRscyJ9
+vmess://eyJ2IjoiMiIsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCByYWsyZDEuNzc3MjY5Lnh5ei0yMDUzIHwgMTQuNjRtcyIsImFkZCI6IjEwNC4yMS4xNi4xIiwicG9ydCI6MjA1MywiYWlkIjowLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsInRscyI6InRscyIsImlkIjoiOTk2MDE2ZjctZGE4OS00NWYxLWIzYjQtNTU1YmM3OTllZDg2Iiwic25pIjoicmFrMmQxLjc3NzI2OS54eXoiLCJob3N0IjoicmFrMmQxLjc3NzI2OS54eXoiLCJwYXRoIjoiXC8ifQ==
+vmess://eyJ2IjoiMiIsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCByYWsyZDEuNzc3MjY5Lnh5ei0yMDUzIHwgMTUuMDVtcyIsImFkZCI6IjEwNC4yMS44MC4xIiwicG9ydCI6MjA1MywiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInR5cGUiOiJub25lIiwidGxzIjoidGxzIiwiaWQiOiI5OTYwMTZmNy1kYTg5LTQ1ZjEtYjNiNC01NTViYzc5OWVkODYiLCJob3N0IjoicmFrMmQxLjc3NzI2OS54eXoiLCJwYXRoIjoiXC8ifQ==
+vmess://eyJ2IjoiMiIsInBzIjoiUkVMQVlcdWQ4M2RcdWRlYTkgfCAxNzQ2ODgyODkxLnNwZWVkLmFkbC5jY2NwLmZyZWVmbHkucHAudWEtMjA5NiB8IDE1Ljg4bXMiLCJhZGQiOiIxNDEuMTAxLjEyMC4yNTMiLCJwb3J0IjoiMjA5NiIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsInRscyI6InRscyIsImlkIjoiMzgxY2I2ZDEtNmFkNC00OTA5LTg0OTQtYjhkNzg2Y2Y3OGNlIiwiaG9zdCI6IjE3NDY4ODI4OTEuc3BlZWQuYWRsLmNjY3AuZnJlZWZseS5wcC51YSIsInBhdGgiOiJcLyJ9
+vless://b3f17d95-32ef-4a73-aa31-329417a6b72c@172.67.155.64:443?security=tls&sni=mast.kanal-tel-nufilter.site&fp=firefox&type=grpc&serviceName=Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&encryption=none#US🇺🇸 | mast.kanal-tel-nufilter.site-443 | 123.62ms
+vless://9a237f52-35f4-411f-a544-f5b574324c6b@104.18.221.160:80?security=&type=ws&path=%2F&host=bia-to-channel4.unlimiteddev.shop&encryption=none#US🇺🇸 | bia-to-channel4.unlimiteddev.shop-80 | 171.41ms
+vless://896efe15-7363-4d6c-97aa-cb0bb5499228@95.217.240.156:443?security=reality&sni=www.speedtest.net&fp=chrome&pbk=gB2mHBv8PQXA0HSxOlOcB91nq5luio58GPdkjAgmk2M&sid=10ff054b&type=tcp&flow=xtls-rprx-vision&encryption=none#REALITY|FI🇫🇮 | 95.217.240.156-443 | 143.54ms
+vless://d39e7f86-4fa1-4f80-b9e1-0e7178d3ae4c@185.231.205.43:443?security=reality&sni=foxrayiranchannel.com&fp=ios&pbk=bipoTqiHv7UfPnGOItOQ5_fyEQk4-asjTDvImoDUpRk&sid=95d2&type=tcp&flow=xtls-rprx-vision&encryption=none#REALITY|FR🇫🇷 | 185.231.205.43-443 | 113.31ms
+vless://81a22b78-3f31-45df-b2b9-702f56f71bd5@77.91.84.45:22?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=edaKSRy-jLqqq7IQzRWfiqrrT4VD8D-gLQjoZ05VKTg&sid=697a8acea036101f&type=tcp&flow=xtls-rprx-vision&encryption=none#REALITY|SE🇸🇪 | 77.91.84.45-22 | 145.71ms
+vless://b91131f7-c382-4be8-9e7d-a373a3d23d77@104.21.63.160:443?security=tls&sni=finland.kanal-tel-nufilter.site&fp=chrome&type=grpc&serviceName=Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&encryption=none#US🇺🇸 | finland.kanal-tel-nufilter.site-443 | 120.23ms
+vless://b91131f7-c382-4be8-9e7d-a373a3d23d77@104.21.20.148:443?security=tls&sni=finland.kanal-tel-nufilter.site&fp=chrome&type=grpc&serviceName=Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&encryption=none#US🇺🇸 | finland.kanal-tel-nufilter.site-443 | 116.51ms
+vless://9a237f52-35f4-411f-a544-f5b574324c6b@104.16.0.163:80?security=&type=ws&path=%2F&host=bia-to-channel4.unlimiteddev.shop&encryption=none#US🇺🇸 | bia-to-channel4.unlimiteddev.shop-80 | 276.49ms
+vless://9a237f52-35f4-411f-a544-f5b574324c6b@104.20.163.162:80?security=&type=ws&path=%2F&host=bia-to-channel4.unlimiteddev.shop&encryption=none#US🇺🇸 | bia-to-channel4.unlimiteddev.shop-80 | 181.09ms
+vless://3ceb909a-1a8a-4d47-9593-4226f21b2825@172.67.218.84:2053?security=tls&sni=uciran-uciran-uciran-uciran-uciran-uciran-uciran.wapin67458.workers.dev&type=ws&host=uciran-uciran-uciran-uciran-uciran-uciran-uciran.wapin67458.workers.dev&encryption=none#RELAY🚩 | uciran-uciran-uciran-uciran-uciran-uciran-uciran.wapin67458.workers.dev-2053 | 52.69ms
+vless://d342d11e-d424-4583-b36e-524ab1f0afa4@172.67.161.104:8443?security=tls&sni=edgood.king361.cf&type=ws&path=%2F%3Fed%3D2048&host=edgood.king361.cf&encryption=none#RELAY🚩 | edgood.king361.cf-8443 | 769.77ms
+vless://1b6ae0f5-01dc-4b96-bca9-31c672dcf0aa@50.7.85.221:443?security=tls&sni=mohsenfitshr.wibibin259.workers.dev&type=ws&path=%2F%3Fed%3D2048&host=mohsenfitshr.wibibin259.workers.dev&encryption=none#RELAY🚩 | mohsenfitshr.wibibin259.workers.dev-443 | 51.1ms
+vless://323bb776-a9eb-4c00-b754-bd17e022dbee@104.27.13.198:80?security=&type=ws&path=%2F&host=bia-to-channel3.unlimiteddev.shop&encryption=none#US🇺🇸 | bia-to-channel3.unlimiteddev.shop-80 | 153.31ms
+vless://0a1d78ed-b293-4e70-a1ca-fefab75167fa@172.67.132.41:80?security=&type=ws&path=%2F%3Fed%3D2048&host=nl42.vlessx.us&encryption=none#US🇺🇸 | nl42.vlessx.us-80 | 102.15ms
+vless://b91131f7-c382-4be8-9e7d-a373a3d23d77@172.67.193.36:443?security=tls&sni=finland.kanal-tel-nufilter.site&fp=chrome&type=grpc&serviceName=Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&encryption=none#US🇺🇸 | finland.kanal-tel-nufilter.site-443 | 108.3ms
+vless://b91131f7-c382-4be8-9e7d-a373a3d23d77@95.217.188.144:443?security=tls&sni=finland.kanal-tel-nufilter.site&fp=chrome&type=grpc&serviceName=Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&encryption=none#US🇺🇸 | finland.kanal-tel-nufilter.site-443 | 104.29ms
+vless://a25e8ff9-8650-4098-86af-b524e4ec72d8@5.75.236.28:443?security=tls&sni=admin2.pythonic-ai.com&fp=safari&type=ws&path=%2FvYoLL0j3yXajA2rNVYyVkeSUkkM&encryption=none#US🇺🇸 | admin2.pythonic-ai.com-443 | 117.37ms
+vless://c7f2ac91-c9ce-46c6-98f3-7204178e4b7c@172.233.57.232:443?security=reality&sni=tunnel.svnreallity.online&fp=chrome&pbk=d35k8hJ0aMt0SQ7DPprVNf6nm_QKabQsbfVmpg819lE&sid=3fdec952&type=grpc&encryption=none#REALITY|NL🇳🇱 | 172.233.57.232-443 | 112.59ms
+vless://94953376-9385-11ee-8335-9f4201f4a728@77.91.103.67:10004?security=&type=ws&path=%2Fvpnjantit&encryption=none#FI🇫🇮 | 77.91.103.67-10004 | 135.39ms
+vless://a87387cc-7a9f-4e8c-c653-d422425897b0@95.217.243.4:443?security=reality&sni=kh%C3%B8m%C3%ABi%C3%B1%C3%AD.%C3%A7om&fp=safari&pbk=QcDX3RiYqqDQE7Pfnt_MzB2e7D4RcaVhb8sgGhZ5Oho&sid=49a0&type=tcp&encryption=none#REALITY|FI🇫🇮 | 95.217.243.4-443 | 144.59ms
+vless://9a237f52-35f4-411f-a544-f5b574324c6b@104.21.7.50:80?security=&type=ws&path=%2F&host=bia-to-channel4.unlimiteddev.shop&encryption=none#US🇺🇸 | bia-to-channel4.unlimiteddev.shop-80 | 59.41ms
+vless://9a237f52-35f4-411f-a544-f5b574324c6b@172.67.135.195:80?security=&type=ws&path=%2F&host=bia-to-channel4.unlimiteddev.shop&encryption=none#US🇺🇸 | bia-to-channel4.unlimiteddev.shop-80 | 86.31ms
+vless://d342d11e-d424-4583-b36e-524ab1f0afa4@[::ffff:104.18.186.83]:443?security=tls&sni=xxx.donated001.workers.dev&type=ws&path=%2F%40V2VIPCHANNEL%2F%3Fed%3D2048&host=xxx.donated001.workers.dev&encryption=none#RELAY🚩 | xxx.donated001.workers.dev-443 | 53.66ms
+vless://9e5c214e-746a-44d5-a9d0-0b0a8d37a957@104.18.13.130:443?security=tls&sni=vpn442vpn442442.hianif.workers.dev&fp=randomized&type=ws&path=%2F%3Fed%3D2048&host=vpn442vpn442442.hianif.workers.dev&encryption=none#RELAY🚩 | vpn442vpn442442.hianif.workers.dev-443 | 51.47ms
+vless://d360d11e-d426-4583-b55e-524ab1f0afa9@104.26.5.60:2096?security=tls&sni=worker-gentle-waterfall-6de8.tigerhungry4.workers.dev&fp=randomized&type=ws&path=%2F%3Fed%3D2048&host=worker-gentle-waterfall-6de8.tigerhungry4.workers.dev&encryption=none#RELAY🚩 | worker-gentle-waterfall-6de8.tigerhungry4.workers.dev-2096 | 70.21ms
+vless://a61eb3a2-1adb-48cb-ab46-ce225769de16@5.161.157.222:443?security=tls&sni=ada36.qvqag.com&allowInsecure=1&type=ws&path=users%3Fed%3D2048&encryption=none#US🇺🇸 | ada36.qvqag.com-443 | 68.33ms
+vless://161f6b0b-47c3-487e-bffd-90b74fb67539@104.21.48.84:8443?security=tls&sni=cloud.barfak123.eu.org&fp=chrome&type=grpc&serviceName=%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF%40iP_CF&encryption=none#RELAY🚩 | cloud.barfak123.eu.org-8443 | 3881.06ms
+vless://6847f901-3938-4083-9fd9-2de96bcb6b9f@104.31.16.98:443?security=tls&sni=hdfy2cdn1.cpionline.co&type=ws&path=%2Fvncf0bfUuZ6QgIre2fcLjqskl&host=hdfy2cdn1.cpionline.co&encryption=none#RELAY🚩 | hdfy2cdn1.cpionline.co-443 | 83.55ms
+vless://d342d11e-d424-4583-b36e-524ab1f0afa4@162.159.200.123:443?security=tls&sni=xxx.donated001.workers.dev&type=ws&path=%2F%40V2VIPCHANNEL%2F%3Fed%3D2048&host=xxx.donated001.workers.dev&encryption=none#RELAY🚩 | xxx.donated001.workers.dev-443 | 14.69ms
+vless://a61eb3a2-1adb-48cb-ab46-ce225769de16@ada70.fupaj.com:443?security=tls&type=ws&path=users%3Fed%3D2048&encryption=none#US🇺🇸 | ada70.fupaj.com-443 | 86.36ms
+vless://0af0090b-4223-4e21-84a6-46b192ff2a60@212.64.199.79:443?security=reality&sni=trendyol.com&fp=chrome&pbk=6JqJJ-wIZpy62AitE3hxzdv1DiosZ3UCPwaJQhuq4Qg&sid=de&type=grpc&serviceName=%40Catvpns&encryption=none#REALITY|TR🇹🇷 | 212.64.199.79-443 | 154.12ms
+vless://a61eb3a2-1adb-48cb-ab46-ce225769de16@5.161.47.151:443?security=tls&sni=ada70.fupaj.com&alpn=http%2F1.1&allowInsecure=1&type=ws&path=users%3Fed%3D2048&encryption=none#US🇺🇸 | ada70.fupaj.com-443 | 56.84ms
+vless://8a5d06d3-67af-43db-9632-54474883b3eb@170.114.46.79:443?security=tls&sni=test.worse.workers.dev&type=ws&path=%2F%3Fed%3D2048&host=test.worse.workers.dev&encryption=none#RELAY🚩 | test.worse.workers.dev-443 | 55.04ms
+vless://9bf9035c-f89c-4abb-ae78-1d0955ccbc86@172.67.199.79:80?security=&type=ws&path=%2F%3Fed%3D2048&host=nl34.vlessx.us&encryption=none#US🇺🇸 | nl34.vlessx.us-80 | 93.76ms
+vless://1ea40d23-e223-4be9-a830-036c9740b830@mamadtatardo442.my442vpn442.workers.dev:443?security=tls&sni=mamadtatardo442.my442vpn442.workers.dev&fp=randomized&type=ws&path=%2F%3Fed%3D2048&encryption=none#RELAY🚩 | mamadtatardo442.my442vpn442.workers.dev-443 | 78.57ms
+vless://5aa06d39-b6d5-4527-89b6-5e16cf73275a@us1.vlessx.us:80?security=&type=ws&path=%2F%3Fed%3D2048&host=us1.vlessx.us&encryption=none#US🇺🇸 | us1.vlessx.us-80 | 128.16ms
+vless://d60fc3c5-9f07-4cdb-b81f-70af27936bdc@104.21.1.12:2083?sni=ex.sue.x10.mx&type=ws&host=ex.sue.x10.mx&path=%2F%3Fed%3D2560fp%3Dchrome&security=tls#RELAY🚩 | ex.sue.x10.mx-2083 | 169.3ms
+vless://06e4425e-a8cb-4b63-929f-2105604ab0a9@icook.tw:443?allowInsecure=1&sni=sl.ylka.dpdns.org&type=ws&host=sl.ylka.dpdns.org&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | sl.ylka.dpdns.org-443 | 3561.47ms
+vless://906ba92f-ef96-4133-8eee-f33202a5a721@9e.iran.pp.ua:443?sni=9e.iran.pp.ua&alpn=http%2F1.1&type=ws&host=9e.iran.pp.ua&path=%2FK8X1ocJD1r0dTd5pVam9wfp%3Dchrome&security=tls#RELAY🚩 | 9e.iran.pp.ua-443 | 297.1ms
+vless://64aced52-7611-42e5-8725-c6bb47f38555@wow.quicky.dpdns.org:443?sni=us.quicky.dpdns.org&type=ws&host=us.quicky.dpdns.org&path=%2Ffastusfp%3Dchrome&security=tls#RELAY🚩 | us.quicky.dpdns.org-443 | 198.17ms
+vless://9c7e9c02-d37a-4f3c-b860-6460a6ff473b@103.21.244.105:8443?sni=vless.vvzxyvv.sbs&type=ws&host=vless.vvzxyvv.sbs&path=%2F%3Fed%3D2560fp%3Drandom&security=tls#RELAY🚩 | vless.vvzxyvv.sbs-8443 | 73.45ms
+vless://d3c62dea-ac54-4163-ab3f-20d6ef9f8420@188.114.97.179:2087?sni=1.659118019.uk&type=ws&host=1.659118019.uk&path=%2F%3Fed%3D2560fp%3Drandomfp%3Dchrome&security=tls#RELAY🚩 | 1.659118019.uk-2087 | 139.49ms
+vless://76f2c7ff-1fa4-474f-f522-f2f76d5a4542@95.211.62.200:80?sni=refersion.com&fp=chrome&security=tls#RELAY🚩 | refersion.com-80 | 47.53ms
+vless://15b24b56-d667-4fa8-b548-f3dc942fb461@172.67.208.155:443?sni=2werty.2030.pp.ua&alpn=http%2F1.1&type=ws&host=2werty.2030.pp.ua&path=%2Fok1UBnf7txQ8YJFJxzfp%3Dchrome&security=tls#RELAY🚩 | 2werty.2030.pp.ua-443 | 414.93ms
+vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:443?sni=ZlRuVwDm5.ZuKaR.InFo&alpn=h2http%2F1.1&type=ws&host=ZlRuVwDm5.ZuKaR.InFo&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | ZlRuVwDm5.ZuKaR.InFo-443 | 225.51ms
+vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:8443?sni=ZlRuVwDm4.ZuKaR.InFo&alpn=h2http%2F1.1&type=ws&host=ZlRuVwDm4.ZuKaR.InFo&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | ZlRuVwDm4.ZuKaR.InFo-8443 | 253.63ms
+vless://31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9@scorpion1.info:2087?sni=Tp418Gi9H1.mOlAnAmAmAlI1.iNfO&alpn=h2http%2F1.1&type=ws&host=Tp418Gi9H1.mOlAnAmAmAlI1.iNfO&path=%2Ffp%3Dchrome&security=tls#DE🇩🇪 | Tp418Gi9H1.mOlAnAmAmAlI1.iNfO-2087 | 327.78ms
+vless://d3c62dea-ac54-4163-ab3f-20d6ef9f8420@104.16.117.93:2087?sni=1.659118019.uk&type=ws&host=1.659118019.uk&path=fp%3Dchrome&security=tls#RELAY🚩 | 1.659118019.uk-2087 | 15.19ms
+vless://d60fc3c5-9f07-4cdb-b81f-70af27936bdc@172.67.151.188:2083?sni=ex.sue.x10.mx&type=ws&host=ex.sue.x10.mx&path=%2F%3Fed%3D2560fp%3Dchrome&security=tls#RELAY🚩 | ex.sue.x10.mx-2083 | 15.5ms
+vless://585acd30-52bf-4b70-a537-e13649fafefc@172.67.212.59:443?sni=bBA.890601.pP.UA&alpn=http%2F1.1&type=ws&host=bba.890601.pp.ua&path=%2FrU9rSjDSOd4yY2fOefp%3Dchrome&security=tls#RELAY🚩 | bBA.890601.pP.UA-443 | 350.51ms
+vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:8443?sni=KxPlZrZq3.KaMeLiNa.oRg&alpn=h2&type=ws&host=KxPlZrZq3.KaMeLiNa.oRg&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | KxPlZrZq3.KaMeLiNa.oRg-8443 | 203.91ms
+vless://5453ae26-250d-4e79-b4ec-016baf806865@104.21.71.205:443?sni=7d33510a-5dA0-4F85-b1d5-5321a9eaA72a.890603.pP.uA&alpn=http%2F1.1&type=ws&host=7d33510a-5da0-4f85-b1d5-5321a9eaa72a.890603.pp.ua&path=%2FXcQF058rNJ3gc4ajfp%3Dchrome&security=tls#RELAY🚩 | 7d33510a-5dA0-4F85-b1d5-5321a9eaA72a.890603.pP.uA-443 | 339.6ms
+vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:443?sni=UjIvMdYn5.ZuMuT.InFo&alpn=h2http%2F1.1&type=ws&host=UjIvMdYn5.ZuMuT.InFo&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | UjIvMdYn5.ZuMuT.InFo-443 | 202.1ms
+vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@www.speedtest.net:8443?sni=FvKnGfDk22.tRaViQo.oRg&alpn=h3h2&type=ws&host=FvKnGfDk22.tRaViQo.oRg&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | FvKnGfDk22.tRaViQo.oRg-8443 | 256.79ms
+vless://39bd8266-8f33-492e-a44b-1a7c393a8281@104.17.147.22:8880?type=ws&host=de-snapp.academigroup.ir.&path=%2FJoin--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420%3Fed%3D2048#RELAY🚩 | de-snapp.academigroup.ir.-8880 | 380.32ms
+vless://26211e12-6c96-483d-980d-757fe5fe6cc8@91.108.249.233:443?sni=snappfood.ir&fp=chrome&security=tls#IR🇮🇷 | snappfood.ir-443 | 596.3ms
+vless://c8eac4b7-95ba-4ce0-920d-c3279eb3b391@104.21.78.243:443?sni=cCVBNhJ.7282728.XYZ&alpn=http%2F1.1&type=ws&host=ccvbnhj.7282728.xyz&path=%2F6r23FpdcA4KNAXXfp%3Dchrome&security=tls#RELAY🚩 | cCVBNhJ.7282728.XYZ-443 | 72.24ms
+vless://c4fa89d4-fcb9-48ba-adbc-665181cc817f@135.148.142.30:443?sni=147135010072.sec21org.com&fp=chrome&security=tls#US🇺🇸 | 147135010072.sec21org.com-443 | 95.92ms
+vless://0a23af3f-3f9b-4333-ae89-796f7fe2f9ce@172.67.175.139:443?sni=S859886xYZXs.859886.xYz&alpn=http%2F1.1&type=ws&host=s859886xyzxs.859886.xyz&path=%2F25Rajr8UdFGa29fCwxSfp%3Dchrome&security=tls#RELAY🚩 | S859886xYZXs.859886.xYz-443 | 77.54ms
+vless://76f2c7ff-1fa4-474f-f522-f2f76d5a4542@snapp.ir.iraniantim.ir:80?sni=refersion.com&fp=chrome&security=tls#RELAY🚩 | refersion.com-80 | 14.87ms
+vless://60af76a9-66c2-461e-8545-6fe0ac2822f8@104.21.17.127:443?sni=trre.859885.xyz&alpn=http%2F1.1&type=ws&host=trre.859885.xyz&path=%2F6pC5ZWNjJLlDlbpifp%3Dchrome&security=tls#RELAY🚩 | trre.859885.xyz-443 | 89.21ms
+vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:2096?sni=FdEuQxFq3.ZuMiNhO.InFo&alpn=h2http%2F1.1&type=ws&host=FdEuQxFq3.ZuMiNhO.InFo&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | FdEuQxFq3.ZuMiNhO.InFo-2096 | 159.08ms
+vless://d1b29ae3-cea2-496f-b2a5-28753d4cdec2@104.16.65.128:443?sni=cf.zhaoyin.wang&type=ws&host=cf.zhaoyin.wang&path=fp%3Dchrome&security=tls#RELAY🚩 | cf.zhaoyin.wang-443 | 379.08ms
+vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@104.17.148.22:8443?sni=GxVpOnLl13.pRiMeXaD.OrG&type=ws&host=GxVpOnLl13.pRiMeXaD.OrG&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | GxVpOnLl13.pRiMeXaD.OrG-8443 | 142.11ms
+vless://e74d7639-3755-4624-b770-efa6e7ec09a8@104.21.82.14:443?sni=M3SDf.777259.xyz&alpn=http%2F1.1&type=ws&host=m3sdf.777259.xyz&path=%2FBt93qlsreYHzV5Ii9WWfp%3Dchrome&security=tls#RELAY🚩 | M3SDf.777259.xyz-443 | 63.18ms
+vless://39bd8266-8f33-492e-a44b-1a7c393a8281@172.67.204.84:8880?type=ws&host=de-snapp.academigroup.ir.&path=%2FJoin--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420%3Fed%3D2048#RELAY🚩 | de-snapp.academigroup.ir.-8880 | 15.08ms
+vless://585acd30-52bf-4b70-a537-e13649fafefc@104.21.53.113:443?sni=bBA.890601.pP.UA&alpn=http%2F1.1&type=ws&host=bba.890601.pp.ua&path=%2FrU9rSjDSOd4yY2fOefp%3Dchrome&security=tls#RELAY🚩 | bBA.890601.pP.UA-443 | 14.85ms
+vless://44ed7a37-af89-4cd1-8680-83a7207810d9@104.21.26.17:443?sni=1.459.PP.uA&alpn=http%2F1.1&type=ws&host=1.459.pp.ua&path=%2Fen98IVNnhxyMtdfYnjLYhU30Ufp%3Dchrome&security=tls#RELAY🚩 | 1.459.PP.uA-443 | 160.51ms
+vless://1784cdd4-bd30-4451-8c0a-f9af3f42808b@www.speedtest.net:80?type=ws&host=www.speedtest.net.lop.isvpython.online.&path=%2Ftelegram-%40ISVvpn-telegram-%40ISVvpn-telegram-%40ISVvpn-telegram-%40ISVvpn-telegram-%40ISVvpn-telegram-%40ISVvpn-telegram-%40ISVvpn-telegram-%40ISVvpn-telegram-%40ISVvpn-telegram-%40ISVvpn%3Fed%3D2048#RELAY🚩 | www.speedtest.net.lop.isvpython.online.-80 | 68.23ms
+vless://5453ae26-250d-4e79-b4ec-016baf806865@172.67.149.43:443?sni=7d33510a-5dA0-4F85-b1d5-5321a9eaA72a.890603.pP.uA&alpn=http%2F1.1&type=ws&host=7d33510a-5da0-4f85-b1d5-5321a9eaa72a.890603.pp.ua&path=%2FXcQF058rNJ3gc4ajfp%3Dchrome&security=tls#RELAY🚩 | 7d33510a-5dA0-4F85-b1d5-5321a9eaA72a.890603.pP.uA-443 | 14.65ms
+vless://d889b4c8-dab9-4b0c-932b-e4071c727308@172.67.220.93:443?sni=M6dFg.777219.XYZ&alpn=http%2F1.1&type=ws&host=m6dfg.777219.xyz&path=%2Fs9mtnLBjERPwvxRAfp%3Dchrome&security=tls#RELAY🚩 | M6dFg.777219.XYZ-443 | 73.38ms
+vless://585acd30-52bf-4b70-a537-e13649fafefc@172.67.138.187:443?sni=XszAW34.7282728.xYZ&alpn=http%2F1.1&type=ws&host=xszaw34.7282728.xyz&path=%2FrU9rSjDSOd4yY2fOefp%3Dchrome&security=tls#RELAY🚩 | XszAW34.7282728.xYZ-443 | 57.78ms
+vless://fefba36d-5142-42f1-b14d-db5249511d93@104.21.42.250:443?sni=5c.191268.xyz&alpn=http%2F1.1&type=ws&host=5c.191268.xyz&path=%2FdRTvoZIiPpwkqKrjEfp%3Dchrome&security=tls#RELAY🚩 | 5c.191268.xyz-443 | 72.48ms
+vless://24a4aa9b-b341-4717-9d4a-00d74c2b84e0@104.17.148.22:8443?sni=Y8wSaBz7Xj.MySpDmMeTi.CoM&alpn=h3h2&type=ws&host=Y8wSaBz7Xj.MySpDmMeTi.CoM&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | Y8wSaBz7Xj.MySpDmMeTi.CoM-8443 | 158.15ms
+vless://794f9f41-92c9-4a78-8ffc-1f82cb48a4e2@160.79.104.113:443?sni=0229.patterdeng.pp.ua&type=ws&host=0229.patterdeng.pp.ua&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | 0229.patterdeng.pp.ua-443 | 423.83ms
+vless://9de9a82e-8c84-4e84-8cc9-b025fc8e9629@104.17.147.22:80?type=ws&host=Www.speedtest.net.developsp.ir.&path=%2F%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy%3Fed%3D2048#RELAY🚩 | Www.speedtest.net.developsp.ir.-80 | 269.48ms
+vless://5453ae26-250d-4e79-b4ec-016baf806865@104.21.34.159:443?sni=1QQsSS.2031.PP.UA&alpn=http%2F1.1&type=ws&host=1qqsss.2031.pp.ua&path=%2FXcQF058rNJ3gc4ajfp%3Dchrome&security=tls#RELAY🚩 | 1QQsSS.2031.PP.UA-443 | 610.49ms
+vless://585acd30-52bf-4b70-a537-e13649fafefc@172.67.163.14:443?sni=DfcVrf.2031.pp.Ua&alpn=http%2F1.1&type=ws&host=dfcvrf.2031.pp.ua&path=%2FrU9rSjDSOd4yY2fOefp%3Dchrome&security=tls#RELAY🚩 | DfcVrf.2031.pp.Ua-443 | 169.2ms
+vless://422f7f8a-2f97-444f-8ec1-2505c9b8482b@172.64.80.228:443?sni=bantony199.top&type=ws&host=bantony199.top&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | bantony199.top-443 | 274.43ms
+vless://895552fa-6284-4c1d-ba00-3944e0c7c626@172.67.212.82:443?sni=EEdfR.131.Pp.ua&alpn=http%2F1.1&type=ws&host=eedfr.131.pp.ua&path=%2FC1SukvGdr58yeduy9AOGfp%3Dchrome&security=tls#RELAY🚩 | EEdfR.131.Pp.ua-443 | 155.38ms
+vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@www.speedtest.net:443?sni=FdEuQxFq2.ZuMiNhO.InFo&alpn=h2http%2F1.1&type=ws&host=FdEuQxFq2.ZuMiNhO.InFo&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | FdEuQxFq2.ZuMiNhO.InFo-443 | 231.07ms
+vless://4be20cf1-6af1-4e87-ae5a-80d6ec30fecd@172.67.152.170:443?sni=8uio0.191288.xyz&alpn=http%2F1.1&type=ws&host=8uio0.191288.xyz&path=%2F4U4Is3KKzxRV9PSfp%3Dchrome&security=tls#RELAY🚩 | 8uio0.191288.xyz-443 | 73.48ms
+vless://31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9@scorpion1.info:2087?sni=Tp428WjDwA.mOlAnAmAmAlI2.iNfO&alpn=h2http%2F1.1&type=ws&host=Tp428WjDwA.mOlAnAmAmAlI2.iNfO&path=%2Ffp%3Dchrome&security=tls#NL🇳🇱 | Tp428WjDwA.mOlAnAmAmAlI2.iNfO-2087 | 303.16ms
+vless://52c0e96b-b8d7-44a5-a995-bd866bf39ec6@104.21.63.226:443?sni=M10DdD.457.Pp.ua&alpn=http%2F1.1&type=ws&host=m10ddd.457.pp.ua&path=%2FYzFLmzNIEQsAmceLxv94lPbgMwfp%3Dchrome&security=tls#RELAY🚩 | M10DdD.457.Pp.ua-443 | 312.66ms
+vless://24a4aa9b-b341-4717-9d4a-00d74c2b84e0@www.speedtest.net:8443?sni=KeMn02UcWh.AaAzZzAaA-8129.cOm&alpn=h3h2&type=ws&host=KeMn02UcWh.AaAzZzAaA-8129.cOm&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | KeMn02UcWh.AaAzZzAaA-8129.cOm-8443 | 256.44ms
+vless://f0f6e76e-e5fe-4e2c-9faf-34832e021eae@172.67.172.91:443?sni=Ty.457.PP.uA&alpn=http%2F1.1&type=ws&host=ty.457.pp.ua&path=%2FAMpQdWyvpaPkb7QHHkQBzYOfp%3Dchrome&security=tls#RELAY🚩 | Ty.457.PP.uA-443 | 34.35ms
+vless://0a23af3f-3f9b-4333-ae89-796f7fe2f9ce@104.21.38.48:443?sni=4rRrRRRrRrRRrrTTtTtttTyyYYyYyyyiIIiIIIiooOOOoooooOoo.HUAngdi2031.dPDns.ORG&alpn=http%2F1.1&type=ws&host=4rrrrrrrrrrrrrttttttttyyyyyyyyyiiiiiiiiooooooooooooo.huangdi2031.dpdns.org&path=%2F25Rajr8UdFGa29fCwxSfp%3Dchrome&security=tls#RELAY🚩 | 4rRrRRRrRrRRrrTTtTtttTyyYYyYyyyiIIiIIIiooOOOoooooOoo.HUAngdi2031.dPDns.ORG-443 | 4040.25ms
+vless://4e41764d-ac31-43f5-8e9b-231ddf252d1f@104.21.71.112:443?sni=xSWe34.288288.ShoP&alpn=http%2F1.1&type=ws&host=xswe34.288288.shop&path=%2FwAlPWPCQWnsVcNgLsMVzfp%3Dchrome&security=tls#RELAY🚩 | xSWe34.288288.ShoP-443 | 81.94ms
+vless://43324bdf-a0e8-4f6f-8bdc-5482db82fd0f@172.67.133.248:443?sni=CCAv.890604.FILEgEaR-sG.Me&alpn=http%2F1.1&type=ws&host=ccav.890604.filegear-sg.me&path=%2Fh1iXYtqUZkDQMvgKagyIefJfM0OQfp%3Dchrome&security=tls#RELAY🚩 | CCAv.890604.FILEgEaR-sG.Me-443 | 180.87ms
+vless://794f9f41-92c9-4a78-8ffc-1f82cb48a4e2@162.159.152.205:443?sni=0229.patterdeng.pp.ua&type=ws&host=0229.patterdeng.pp.ua&path=%2Fproxyip%3DProxyIP.Oracle.cmliussss.netsecurity%3Dtls#RELAY🚩 | 0229.patterdeng.pp.ua-443 | 15.15ms
+vless://06e4425e-a8cb-4b63-929f-2105604ab0a9@160.123.255.180:443?allowInsecure=1&sni=sl.ylka.dpdns.org&type=ws&host=sl.ylka.dpdns.org&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | sl.ylka.dpdns.org-443 | 14.97ms
+vless://06e4425e-a8cb-4b63-929f-2105604ab0a9@192.9.139.160:443?allowInsecure=1&sni=sl.ylka.dpdns.org&type=ws&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | sl.ylka.dpdns.org-443 | 14.9ms
+vless://06e4425e-a8cb-4b63-929f-2105604ab0a9@212.183.88.249:443?allowInsecure=1&sni=sl.ylka.dpdns.org&type=ws&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | sl.ylka.dpdns.org-443 | 15ms
+vless://06e4425e-a8cb-4b63-929f-2105604ab0a9@time.is:443?allowInsecure=1&sni=sl.ylka.dpdns.org&type=ws&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | sl.ylka.dpdns.org-443 | 15.8ms
+vless://7f93e196-1b2f-4a42-8051-5815554c05db@54.224.39.46:443?allowInsecure=0&sni=zula.ir&flow=xtls-rprx-vision-udp443&fp=chrome&security=tls#RELAY🚩 | zula.ir-443 | 272.2ms
+vless://f82fb954-06a1-4f0b-9180-17e07585b61f@172.67.212.82:443?sni=6ercvbnm.131.pp.ua&type=ws&host=6ercvbnm.131.pp.ua&path=%2F0HKVAwzpuQtCNTI3SlZor0security%3Dtls#RELAY🚩 | 6ercvbnm.131.pp.ua-443 | 166.63ms
+vless://f055d270-0e76-4a41-a53f-871bbb51b003@103.21.244.17:443?sni=what.zhonghuoxing.top&type=ws&host=what.zhonghuoxing.top&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | what.zhonghuoxing.top-443 | 72.99ms
+vless://9e769ce1-34be-4e3f-b0a6-823f30eb8f69@www.speedtest.net:443?sni=Ds807Ay6Vc.MaKeFoRlEsS.iNfO&alpn=h3h2&type=ws&host=Ds807Ay6Vc.MaKeFoRlEsS.iNfO&path=%2Ffp%3Dchrome&security=tls#RELAY🚩 | Ds807Ay6Vc.MaKeFoRlEsS.iNfO-443 | 260.12ms
+vless://794f9f41-92c9-4a78-8ffc-1f82cb48a4e2@185.133.35.45:443?allowInsecure=0&sni=0229.patterdeng.pp.ua&type=ws&host=0229.patterdeng.pp.ua&path=%2Fproxyip%3D185.133.35.45%3A443security%3Dtls#RELAY🚩 | 0229.patterdeng.pp.ua-443 | 15.03ms
+vless://794f9f41-92c9-4a78-8ffc-1f82cb48a4e2@185.133.35.36:443?allowInsecure=0&sni=0229.patterdeng.pp.ua&type=ws&host=0229.patterdeng.pp.ua&path=%2F%3Fed%3D2560security%3Dtls#RELAY🚩 | 0229.patterdeng.pp.ua-443 | 15.27ms
+vless://39afdd8e-456d-4afb-9f13-fd0981624230@fra5.vpntype.dev:443?allowInsecure=0&sni=fra5.vpntype.dev&alpn=h2%2Chttp%2F1.1&flow=xtls-rprx-vision-udp443&fp=chrome&security=tls#GI🇬🇮 | fra5.vpntype.dev-443 | 175.68ms
+vless://794f9f41-92c9-4a78-8ffc-1f82cb48a4e2@45.67.215.168:443?allowInsecure=0&sni=0229.patterdeng.pp.ua&type=ws&host=0229.patterdeng.pp.ua&path=%2F%3Fed%3D2560fp%3Drandom&security=tls#RELAY🚩 | 0229.patterdeng.pp.ua-443 | 14.95ms
+vless://291c27a5-34d2-4081-83cc-2196cd208148@170.114.46.6:8080?allowInsecure=0&sni=xrr.rtxconfigz.xyz&type=ws&host=xrr.rtxconfigz.xyz&path=%2F#SG🇸🇬 | xrr.rtxconfigz.xyz-8080 | 251.57ms
+trojan://your_password@16.171.12.136:443?security=tls&sni=aws-se-stockholm-1.f1rocketnode.com&type=tcp#SE🇸🇪 | aws-se-stockholm-1.f1rocketnode.com-443 | 200.49ms
+trojan://your_password@15.160.138.221:443?security=tls&sni=aws-it-milan-1.f1rocketnode.com&type=tcp#IT🇮🇹 | aws-it-milan-1.f1rocketnode.com-443 | 193.84ms
+trojan://your_password@16.62.65.57:443?security=tls&sni=aws-ch-zurich-1.f1rocketnode.com&type=tcp#CH🇨🇭 | aws-ch-zurich-1.f1rocketnode.com-443 | 193.18ms
+trojan://your_password@52.56.183.187:443?security=tls&sni=aws-uk-london-1.f1rocketnode.com&type=tcp#GB🇬🇧 | aws-uk-london-1.f1rocketnode.com-443 | 201.41ms
+trojan://af6a3685-c423-4579-bfea-784c453d5e23@146.59.3.14:443?security=tls&allowInsecure=1&type=tcp#FR🇫🇷 | 146.59.3.14-443 | 138.21ms
+trojan://7f5e1438-0c8f-46d2-baf4-7025c264532e@91.195.240.12:443?security=tls&sni=hkjs.stablize.top&allowInsecure=1&type=tcp#US🇺🇸 | hkjs.stablize.top-443 | 117.69ms
+trojan://e30dbfd0-f15a-11ed-9080-1239d0255272@51.159.59.186:443?security=tls&sni=fr.test3.net&allowInsecure=1&type=tcp#FR🇫🇷 | fr.test3.net-443 | 178.9ms
+trojan://b3df8f31-da3a-4cda-90b1-b3b777cd48e7@51.255.49.192:443?security=tls&sni=ba24.ir&allowInsecure=1&type=tcp#IR🇮🇷 | ba24.ir-443 | 602.98ms
+trojan://your_password@3.29.95.54:443?security=tls&sni=aws-uae-1.f1rocketnode.com&allowInsecure=1&type=tcp#AE🇦🇪 | aws-uae-1.f1rocketnode.com-443 | 282.64ms
+trojan://7b06d22a8a7c764f@5.44.249.53:3389?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | 5.44.249.53-3389 | 196.56ms
+trojan://20210200-49c6-11ed-a9ef-1239d0255272@172.67.24.177:443?security=tls&sni=kipi.covid19.go.id&allowInsecure=1&type=tcp#RELAY🚩 | kipi.covid19.go.id-443 | 77.04ms
+trojan://whyvpn-7dayaktif@104.18.10.39:443?security=tls&sni=do3.kitu.xyz&allowInsecure=1&type=tcp#US🇺🇸 | do3.kitu.xyz-443 | 107.79ms
+trojan://3f23c1eb-ace4-49ec-a7f0-f591b006b95a@23.227.38.45:443?security=tls&sni=jus3.jsjc.sbs&allowInsecure=1&type=tcp#DE🇩🇪 | jus3.jsjc.sbs-443 | 515.84ms
+trojan://your_password@15.236.64.14:443?security=tls&sni=aws-fr-paris-1.f1rocketnode.com&type=tcp#FR🇫🇷 | aws-fr-paris-1.f1rocketnode.com-443 | 166.86ms
+trojan://your_password@13.244.104.87:443?security=tls&sni=aws-za-capetown-1.f1rocketnode.com&type=tcp#ZA🇿🇦 | aws-za-capetown-1.f1rocketnode.com-443 | 336.08ms
+trojan://aef2ca33-b162-409f-8f16-4c736c338412@20.205.37.136:443?security=tls&allowInsecure=1&type=tcp#HK🇭🇰 | 20.205.37.136-443 | 186.65ms
+trojan://5c5ceb40-902b-11eb-945a-1239d0255272@103.253.24.212:443?security=tls&sni=sg1-trojan.bonds.id&type=tcp#SG🇸🇬 | sg1-trojan.bonds.id-443 | 260.14ms
+trojan://3f23c1eb-ace4-49ec-a7f0-f591b006b95a@23.227.39.36:443?security=tls&sni=jsg1.jsjc.sbs&allowInsecure=1&type=tcp#DE🇩🇪 | jsg1.jsjc.sbs-443 | 821.61ms
+trojan://20210200-49c6-11ed-a9ef-1239d0255272@104.18.21.18:443?security=tls&sni=corona.jakarta.go.id&allowInsecure=1&type=tcp#ID🇮🇩 | corona.jakarta.go.id-443 | 474.39ms
+trojan://7d0f1f83-0f2f-4b90-930e-de44ac233fef@20.210.234.145:443?security=tls&sni=in.stablize.top&allowInsecure=1&type=tcp#US🇺🇸 | in.stablize.top-443 | 313.26ms
+trojan://36d48ba9-7445-4b41-b210-58f4e07a627a@104.31.16.120:443?security=tls&sni=in01.trojanyyds.xyz&type=tcp#SG🇸🇬 | in01.trojanyyds.xyz-443 | 780.44ms
+trojan://d76294c5-a31f-408d-ba0b-89880107cab5@5.75.152.12:443?security=tls&allowInsecure=1&type=tcp#DE🇩🇪 | 5.75.152.12-443 | 126.04ms
+trojan://bfb23be0-6c4f-11ee-8513-1239d0255272@51.210.182.170:443?security=tls&sni=zula.ir&allowInsecure=1&type=tcp#RELAY🚩 | zula.ir-443 | 14.65ms
+trojan://your_password@43.206.127.212:443?security=tls&sni=aws-jp-tokyo-1.f1rocketnode.com&allowInsecure=1&type=tcp#JP🇯🇵 | aws-jp-tokyo-1.f1rocketnode.com-443 | 224.09ms
+trojan://9aa6b5ad-c0fc-47f4-a837-f72179d7b662@168.119.64.242:443?security=tls&allowInsecure=1&type=tcp#DE🇩🇪 | 168.119.64.242-443 | 121.21ms
+trojan://26a663656e575c0b@5.44.249.51:3389?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | 5.44.249.51-3389 | 197.56ms
+trojan://4bacb8f1a089763b@5.44.249.50:3389?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | 5.44.249.50-3389 | 195.91ms
+trojan://8ddcc360-5223-11ee-bc2d-1239d0255272@104.31.16.14:443?security=tls&sni=fr1.test3.net&type=ws&path=%2Fhowdy&host=fr1.test3.net#FR🇫🇷 | fr1.test3.net-443 | 156.97ms
+trojan://0c6a3341e8d5ab17@5.44.249.42:3389?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | 5.44.249.42-3389 | 196.01ms
+trojan://9bb27128-e6d2-4cac-bbd3-beb46c4417f8@my02.trojanyyds.xyz:443?security=tls&type=tcp#SG🇸🇬 | my02.trojanyyds.xyz-443 | 742.67ms
+trojan://0c6a3341e8d5ab17@5.44.249.44:3389?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | 5.44.249.44-3389 | 196.42ms
+trojan://26a663656e575c0b@5.44.249.52:3389?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | 5.44.249.52-3389 | 196.82ms
+trojan://28c79056-ccfd-4cc1-93d4-c337cc782e65@89.221.224.94:80?security=tls&sni=is2-t.sshmax.xyz&allowInsecure=1&type=tcp#US🇺🇸 | is2-t.sshmax.xyz-80 | 73.34ms
+trojan://mnk8fd@104.21.51.9:443?security=tls&sni=aws-uae-1.f1cflined.com&alpn=http%2F1.1&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-uae-1.f1cflined.com#RELAY🚩 | aws-uae-1.f1cflined.com-443 | 74.01ms
+trojan://0b65bb06-6b28-487a-8e3c-820dda51e977@172.67.131.245:443?security=tls&sni=series-v1.samanehha.co&type=tcp#RELAY🚩 | series-v1.samanehha.co-443 | 62.99ms
+trojan://your_password@43.205.109.9:443?security=tls&sni=aws-in-mumbai-1.f1rocketnode.com&type=tcp#IN🇮🇳 | aws-in-mumbai-1.f1rocketnode.com-443 | 292.84ms
+trojan://0b65bb06-6b28-487a-8e3c-820dda51e977@104.21.12.87:443?security=tls&sni=series-v1.samanehha.co&type=tcp#RELAY🚩 | series-v1.samanehha.co-443 | 15.25ms
+trojan://46d69a7e-9002-44a3-99c1-01c412f29726@185.176.24.105:443?security=tls&sni=k9de1.djjc.sbs&allowInsecure=1&type=tcp#DE🇩🇪 | k9de1.djjc.sbs-443 | 604.28ms
+trojan://3628ca8d-6371-45df-879c-2d3e5d110b51@24.199.70.112:443?security=tls&allowInsecure=1&type=tcp#US🇺🇸 | 24.199.70.112-443 | 40.81ms
+trojan://72d8e820-7926-4ce3-a87c-b6969f425c79@103.235.46.40:443?security=tls&sni=www.baidu.com&allowInsecure=1&type=tcp#HK🇭🇰 | www.baidu.com-443 | 904.39ms
+trojan://9bb27128-e6d2-4cac-bbd3-beb46c4417f8@hk04.trojanyyds.xyz:443?security=tls&type=tcp#SG🇸🇬 | hk04.trojanyyds.xyz-443 | 978.58ms
+trojan://97fdf760-7bbf-11eb-8e14-1239d0255272@103.253.24.216:443?security=tls&sni=sg3-trojan.bonds.id&type=tcp#SG🇸🇬 | sg3-trojan.bonds.id-443 | 260.76ms
+trojan://your_password@104.21.7.241:443?security=tls&sni=aws-sg-1.f1cflineb.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-sg-1.f1cflineb.com#RELAY🚩 | aws-sg-1.f1cflineb.com-443 | 48.02ms
+trojan://mnk8fd@104.21.69.52:443?security=tls&sni=aws-us-oregon-1.f1cflinec.com&alpn=http%2F1.1&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-us-oregon-1.f1cflinec.com#RELAY🚩 | aws-us-oregon-1.f1cflinec.com-443 | 73.66ms
+trojan://your_password@172.67.165.204:443?security=tls&sni=aws-aus-sydney-1.f1cflinea.com&type=ws&path=%2Ff1rocket&host=aws-aus-sydney-1.f1cflinea.com#RELAY🚩 | aws-aus-sydney-1.f1cflinea.com-443 | 76.65ms
+trojan://mnk8fd@172.67.204.230:443?security=tls&sni=aws-us-oregon-1.f1cflinec.com&alpn=http%2F1.1&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-us-oregon-1.f1cflinec.com#RELAY🚩 | aws-us-oregon-1.f1cflinec.com-443 | 18.83ms
+trojan://your_password@aws-ch-zurich-1.f1cflineb.com:443?security=tls&sni=aws-ch-zurich-1.f1cflineb.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-ch-zurich-1.f1cflineb.com#RELAY🚩 | aws-ch-zurich-1.f1cflineb.com-443 | 72.98ms
+trojan://9bb27128-e6d2-4cac-bbd3-beb46c4417f8@my01.trojanyyds.xyz:443?security=tls&type=tcp#SG🇸🇬 | my01.trojanyyds.xyz-443 | 525.3ms
+trojan://your_password@aws-uk-london-1.f1cflinea.com:443?security=tls&sni=aws-uk-london-1.f1cflinea.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-uk-london-1.f1cflinea.com#RELAY🚩 | aws-uk-london-1.f1cflinea.com-443 | 73.52ms
+trojan://29ea82cf-f956-42b2-a5dc-35feea39e7ff@108.181.24.37:443?security=tls&sni=glc-us1.windowsupdatea.com&type=tcp#RELAY🚩 | glc-us1.windowsupdatea.com-443 | 51.23ms
+trojan://pjdnqv@15.181.162.90:443?security=tls&sni=aws-us-nyc-1.f1rocketnode.com&allowInsecure=1&type=tcp#US🇺🇸 | aws-us-nyc-1.f1rocketnode.com-443 | 124.99ms
+trojan://01596265-168b-46a7-bcb7-25662c7a9546@188.114.98.0:443?security=tls&sni=hdfy7c1.foriran2.eu.org&allowInsecure=1&type=grpc&serviceName=fYn1ncaQMA1foaK1hpquM#RELAY🚩 | hdfy7c1.foriran2.eu.org-443 | 139.97ms
+trojan://9bb27128-e6d2-4cac-bbd3-beb46c4417f8@hk03.trojanyyds.xyz:443?security=tls&type=tcp#SG🇸🇬 | hk03.trojanyyds.xyz-443 | 702.73ms
+trojan://45a99be4-8cb4-4df2-b7a4-42f1a8dea5c1@usa.liangyuandiancloud.com:443?security=tls&allowInsecure=1&type=tcp#DE🇩🇪 | usa.liangyuandiancloud.com-443 | 262.05ms
+trojan://your_password@16.163.157.177:443?security=tls&sni=aws-hk-1.f1rocketnode.com&type=tcp#HK🇭🇰 | aws-hk-1.f1rocketnode.com-443 | 261.43ms
+trojan://b21af1e78d194c2093aabbee770c8529@118.142.17.238:443?security=tls&sni=www.gpt123.one&allowInsecure=1&type=tcp#RELAY🚩 | www.gpt123.one-443 | 47.3ms
+trojan://cd41b9d7-df15-46ad-a778-257b0851525a@hk05.trojanyyds.xyz:443?security=tls&allowInsecure=1&type=tcp#SG🇸🇬 | hk05.trojanyyds.xyz-443 | 795.31ms
+trojan://your_password@35.183.238.42:443?security=tls&sni=aws-ca-central-1.f1rocketnode.com&allowInsecure=1&type=tcp#CA🇨🇦 | aws-ca-central-1.f1rocketnode.com-443 | 98.85ms
+trojan://18844%40zxcvbn@49.212.204.123:443?security=tls&allowInsecure=1&type=tcp#JP🇯🇵 | 49.212.204.123-443 | 138.96ms
+trojan://a13820c547fa34c5c45515c12f0cd576@223.111.157.35:10051?security=tls&sni=jp2.91js.pw&allowInsecure=1&type=tcp#CN🇨🇳 | jp2.91js.pw-10051 | 424.38ms
+trojan://your_password@3.27.95.146:443?security=tls&sni=aws-aus-sydney-1.f1rocketnode.com&type=tcp#AU🇦🇺 | aws-aus-sydney-1.f1rocketnode.com-443 | 223.92ms
+trojan://7a73f1dc97a70905870c0c0484b12145@133.242.55.38:443?security=tls&allowInsecure=1&type=tcp#JP🇯🇵 | 133.242.55.38-443 | 148.79ms
+trojan://your_password@aws-se-stockholm-1.f1cflinea.com:443?security=tls&sni=aws-se-stockholm-1.f1cflinea.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-se-stockholm-1.f1cflinea.com#RELAY🚩 | aws-se-stockholm-1.f1cflinea.com-443 | 90.5ms
+trojan://pjdnqv@172.67.216.95:443?security=tls&sni=aws-us-oregon-1.f1cflined.com&alpn=http%2F1.1&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-us-oregon-1.f1cflined.com#RELAY🚩 | aws-us-oregon-1.f1cflined.com-443 | 43.11ms
+trojan://your_password@aws-ar-buenosaires-1.f1cflinea.com:443?security=tls&sni=aws-ar-buenosaires-1.f1cflinea.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-ar-buenosaires-1.f1cflinea.com#RELAY🚩 | aws-ar-buenosaires-1.f1cflinea.com-443 | 47.3ms
+trojan://your_password@aws-uae-1.f1cflineb.com:443?security=tls&sni=aws-uae-1.f1cflineb.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-uae-1.f1cflineb.com#RELAY🚩 | aws-uae-1.f1cflineb.com-443 | 72.37ms
+trojan://your_password@aws-uae-1.f1rocketnode.com:443?security=tls&sni=aws-uae-1.f1rocketnode.com&type=tcp#AE🇦🇪 | aws-uae-1.f1rocketnode.com-443 | 278.94ms
+trojan://3d2ed150-1019-11ee-8007-1239d0255272@206.168.190.219:2087?security=tls&sni=ba24.ir&allowInsecure=1&type=tcp#IR🇮🇷 | ba24.ir-2087 | 592.22ms
+trojan://your_password@aws-ca-central-1.f1cflineb.com:443?security=tls&sni=aws-ca-central-1.f1cflineb.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-ca-central-1.f1cflineb.com#RELAY🚩 | aws-ca-central-1.f1cflineb.com-443 | 46.82ms
+trojan://9bb27128-e6d2-4cac-bbd3-beb46c4417f8@sk01.trojanyyds.xyz:443?security=tls&type=tcp#SG🇸🇬 | sk01.trojanyyds.xyz-443 | 494.19ms
+trojan://jagoanssh-Aweqdcc@104.21.32.17:443?security=tls&sni=to.ruangguru.com&allowInsecure=1&type=tcp#RELAY🚩 | to.ruangguru.com-443 | 63.94ms
+trojan://f10d81d8-ad4b-300a-825b-f54f515bd06e@sg2.jjzgy.live:443?security=tls&sni=sg2.jjzgy.live&allowInsecure=1&type=tcp#US🇺🇸 | sg2.jjzgy.live-443 | 192.64ms
+trojan://your_password@18.142.122.247:443?security=tls&sni=aws-sg-1.f1rocketnode.com&type=tcp#SG🇸🇬 | aws-sg-1.f1rocketnode.com-443 | 261.09ms
+trojan://your_password@aws-in-mumbai-1.f1cflinea.com:443?security=tls&sni=aws-in-mumbai-1.f1cflinea.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-in-mumbai-1.f1cflinea.com#RELAY🚩 | aws-in-mumbai-1.f1cflinea.com-443 | 47.48ms
+trojan://your_password@104.21.73.195:443?security=tls&sni=aws-aus-sydney-1.f1cflinea.com&type=ws&path=%2Ff1rocket&host=aws-aus-sydney-1.f1cflinea.com#RELAY🚩 | aws-aus-sydney-1.f1cflinea.com-443 | 14.88ms
+trojan://your_password@188.114.99.0:443?security=tls&sni=aws-ge-frankfurt-1.f1cflinea.com&allowInsecure=1&type=ws&path=%2Ff1rocket&host=aws-ge-frankfurt-1.f1cflinea.com#RELAY🚩 | aws-ge-frankfurt-1.f1cflinea.com-443 | 86.29ms
+trojan://your_password@aws-es-madrid-1.f1rocketnode.com:443?security=tls&sni=aws-es-madrid-1.f1rocketnode.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-es-madrid-1.f1rocketnode.com#ES🇪🇸 | aws-es-madrid-1.f1rocketnode.com-443 | 183.53ms
+trojan://pjdnqv@aws-us-dallas-1.f1rocketnode.com:443?security=tls&sni=aws-us-dallas-1.f1rocketnode.com&type=tcp#US🇺🇸 | aws-us-dallas-1.f1rocketnode.com-443 | 63.37ms
+trojan://your_password@aws-uk-london-1.f1cflineb.com:443?security=tls&sni=aws-uk-london-1.f1cflineb.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-uk-london-1.f1cflineb.com#RELAY🚩 | aws-uk-london-1.f1cflineb.com-443 | 73.51ms
+trojan://c46cdd67-aac9-4a8c-9ddb-8ba66ece9286@guolicheng.cc:443?security=tls&allowInsecure=1&type=tcp#RELAY🚩 | guolicheng.cc-443 | 50.11ms
+trojan://29ea82cf-f956-42b2-a5dc-35feea39e7ff@141.193.68.81:443?security=tls&sni=glc-us3.windowsupdatea.com&type=tcp#RELAY🚩 | glc-us3.windowsupdatea.com-443 | 47.87ms
+trojan://your_password@aws-ca-central-1.f1cflinea.com:443?security=tls&sni=aws-ca-central-1.f1cflinea.com&fp=chrome&type=ws&path=%2Ff1rocket&host=aws-ca-central-1.f1cflinea.com#RELAY🚩 | aws-ca-central-1.f1cflinea.com-443 | 48.11ms
+trojan://pjdnqv@aws-us-nyc-1.f1rocketnode.com:443?security=tls&sni=aws-us-nyc-1.f1rocketnode.com&type=tcp#US🇺🇸 | aws-us-nyc-1.f1rocketnode.com-443 | 93.86ms
+trojan://-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26@67.21.93.242:443?security=tls&sni=upay.com&allowInsecure=1&type=tcp#US🇺🇸 | upay.com-443 | 673.57ms
+trojan://f10d81d8-ad4b-300a-825b-f54f515bd06e@us1.jjzgy.live:443?security=tls&sni=us1.jjzgy.live&allowInsecure=1&type=tcp#US🇺🇸 | us1.jjzgy.live-443 | 119.14ms
+trojan://21c6c7cb-332b-4a0c-9ad7-dff9c3111442@104.21.19.64:443?security=tls&sni=us02web.zoom.us&type=tcp#US🇺🇸 | us02web.zoom.us-443 | 31.38ms
+trojan://a6bebbb9-c6bc-42af-9ea2-434a2164a978@ru01.trojanyyds.xyz:443?security=tls&sni=ru01.trojanyyds.xyz&allowInsecure=1&type=tcp#SG🇸🇬 | ru01.trojanyyds.xyz-443 | 607.88ms
+trojan://81d93f62-15a2-4994-adb9-0b5d906aac7e@138.2.114.255:443?security=tls&allowInsecure=1&type=tcp#KR🇰🇷 | 138.2.114.255-443 | 158.55ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@212.183.88.29:443?sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&allowInsecure=1#RELAY🚩 | icecream.955850.xyz-443 | 59.54ms
+trojan://xxoo@us.blazeppn.info:443?allowInsecure=1&sni=us.blazeppn.info#US🇺🇸 | us.blazeppn.info-443 | 146.45ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@160.79.105.81:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D160.79.105.81%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 14.64ms
+trojan://bpb-trojan@us.madison.eu.org:443?allowInsecure=0&sni=skwygx.top&type=ws&host=skwygx.top&path=%2Ftr%3Fed%3D2560#RELAY🚩 | skwygx.top-443 | 57.98ms
+trojan://4a3ee276-f50f-46f6-ba4d-13571732ab70@172.67.204.120:443?security=tls&sni=ddcDe.890603.XYz&type=ws&host=ddcde.890603.xyz&path=%2FCOp52Dbu3dvwvDWUxOqxq&fp=chrome&alpn=http%2F1.1#RELAY🚩 | ddcDe.890603.XYz-443 | 58.91ms
+trojan://3d4ad187-b554-4300-bf71-d26c71962504@104.21.78.243:443?security=tls&sni=FFfgtyy.7282728.XYZ&type=ws&host=fffgtyy.7282728.xyz&path=%2FWaHA3RC540rQ8PWqRcOEICAwmfH7&fp=chrome&alpn=http%2F1.1#RELAY🚩 | FFfgtyy.7282728.XYZ-443 | 71.18ms
+trojan://f0f6e76e-e5fe-4e2c-9faf-34832e021eae@172.67.133.248:443?allowInsecure=0&sni=DDd.890604.FIlEGear-sG.Me&type=ws&host=DDd.890604.FIlEGear-sG.Me&path=%2FmZr1mA5hub7QHHkQBzYO#RELAY🚩 | DDd.890604.FIlEGear-sG.Me-443 | 155.1ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@212.183.88.194:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D212.183.88.194%3A443#RELAY🚩 | icecream.955850.xyz-443 | 15.71ms
+trojan://15153c1d-fc81-4b2a-9689-7b4e4a72dce5@172.67.188.77:443?security=tls&sni=edfr4.890604.dpdns.org&type=ws&host=edfr4.890604.dpdns.org&path=%2Fl6lvY4hFZriQDBimbKYmPIggy&fp=chrome&alpn=http%2F1.1#RELAY🚩 | edfr4.890604.dpdns.org-443 | 4234.79ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@160.123.255.243:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D160.123.255.243%3A443#RELAY🚩 | icecream.955850.xyz-443 | 15.65ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@192.0.54.184:443?type=ws&sni=icecream.955850.xyz&path=%2Fproxyip%3D192.0.54.184%3A443&host=icecream.955850.xyz#RELAY🚩 | icecream.955850.xyz-443 | 14.91ms
+trojan://Aimer@167.68.5.85:2053?security=tls&sni=epccx.ambercc.filegear-sg.me&type=ws&host=epccx.ambercc.filegear-sg.me&path=%2F%3Fed%3D2560#RELAY🚩 | epccx.ambercc.filegear-sg.me-2053 | 312.46ms
+trojan://f0f6e76e-e5fe-4e2c-9faf-34832e021eae@104.21.25.95:443?allowInsecure=1&sni=DDd.890604.FIlEGear-sG.Me&type=ws&host=DDd.890604.FIlEGear-sG.Me&path=%2FmZr1mA5hub7QHHkQBzYO#RELAY🚩 | DDd.890604.FIlEGear-sG.Me-443 | 15.03ms
+trojan://70776bb4-d791-4cbd-9c9b-c76e937f9e60@172.67.216.240:443?allowInsecure=1&sni=Xxs345rf.857856.xYZ&type=ws&host=Xxs345rf.857856.xYZ&path=%2F71M8Ov1I5Gk9247fHC0XGZG6#RELAY🚩 | Xxs345rf.857856.xYZ-443 | 72.69ms
+trojan://15153c1d-fc81-4b2a-9689-7b4e4a72dce5@172.67.188.77:443?allowInsecure=1&sni=edfr4.890604.dpdns.org&type=ws&path=%2Fl6lvY4hFZriQDBimbKYmPIggy#RELAY🚩 | edfr4.890604.dpdns.org-443 | 15.33ms
+trojan://5453ae26-250d-4e79-b4ec-016baf806865@104.21.23.162:443?sni=D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA&type=ws&path=%2FOYzPAeaZdXUq2d6J3gc4aj#RELAY🚩 | D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA-443 | 399.28ms
+trojan://xxoo@us.blazeppn.info:443?allowInsecure=0&sni=us.blazeppn.info#US🇺🇸 | us.blazeppn.info-443 | 140.04ms
+trojan://bpb-trojan@us.madison.eu.org:443?allowInsecure=0&sni=skwygx.top&type=ws&host=skwygx.top&path=%2Ftr%3Fed%3D2560#RELAY🚩 | skwygx.top-443 | 14.88ms
+trojan://061ec9d5-ba40-428a-8be0-1947b10b5cfc@104.21.57.88:443?allowInsecure=0&sni=ddFrt.irAN.Pp.Ua&type=ws&host=ddFrt.irAN.Pp.Ua&path=%2FDmby2AKiZKvMo1YauoQwY5#RELAY🚩 | ddFrt.irAN.Pp.Ua-443 | 300.6ms
+trojan://4a3ee276-f50f-46f6-ba4d-13571732ab70@172.67.204.120:443?allowInsecure=0&sni=ddcDe.890603.XYz&type=ws&host=ddcDe.890603.XYz&path=%2FCOp52Dbu3dvwvDWUxOqxq#RELAY🚩 | ddcDe.890603.XYz-443 | 14.9ms
+trojan://74260665780162200@52.60.142.77:443?allowInsecure=0&sni=allowing-owl.shiner427.skin#CA🇨🇦 | allowing-owl.shiner427.skin-443 | 316.89ms
+trojan://0017bbce-e963-4b81-8981-a8e4117d2cd4@172.67.172.91:443?allowInsecure=0&sni=m8tttr5.457.pp.ua&alpn=http%2F1.1&type=ws&path=%2FKLcD0D18SR866TVMXPAl#RELAY🚩 | m8tttr5.457.pp.ua-443 | 157.7ms
+trojan://2faaf996-d2b0-440d-8258-81f2b05dd0e4@104.26.13.31:443?allowInsecure=0&sni=fwd-refuse-senators-brought.trycloudflare.com&type=ws&path=%2Ftrojan-argo%3Fed%3D2560#RELAY🚩 | fwd-refuse-senators-brought.trycloudflare.com-443 | 85.43ms
+trojan://feac8d6d-8fcf-4ef1-9ad0-18833c9fca11@green.cdntencentmusic.com:28505?allowInsecure=0&sni=green.cdntencentmusic.com#TW🇹🇼 | green.cdntencentmusic.com-28505 | 319.78ms
+trojan://4GA1yNVbxOmx5deR3oj6CgKcHxL1aOSN@mortify.koreanbbq.link:8123?allowInsecure=0&sni=mortify.koreanbbq.link#IN🇮🇳 | mortify.koreanbbq.link-8123 | 312.46ms
+trojan://4GA1yNVbxOmx5deR3oj6CgKcHxL1aOSN@mortify.koreanbbq.link:8123#IN🇮🇳 | mortify.koreanbbq.link-8123 | 263.3ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@212.183.88.194:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D212.183.88.194%3A443#RELAY🚩 | icecream.955850.xyz-443 | 14.72ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@212.183.88.194:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D212.183.88.194%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 14.7ms
+trojan://bpb-trojan@bg.madison.eu.org:443?allowInsecure=0&sni=skwygx.top&type=ws&host=skwygx.top&path=%2Ftr#RELAY🚩 | skwygx.top-443 | 14.89ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@185.133.35.254:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D185.133.35.254%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 15.15ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@185.133.35.141:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D185.133.35.141%3A443#RELAY🚩 | icecream.955850.xyz-443 | 15.43ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@140.238.212.95:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D140.238.212.95%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 16.1ms
+trojan://bpb-trojan@est.madison.eu.org:443?allowInsecure=0&sni=skwygx.top&type=ws&host=skwygx.top&path=%2Ftr#RELAY🚩 | skwygx.top-443 | 14.52ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.254:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.254%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 15.23ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.237:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.237%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 14.95ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.89:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.89%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 14.94ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.227:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.227%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 14.64ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.227:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.227%3A443#RELAY🚩 | icecream.955850.xyz-443 | 15.06ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.51:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.51%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 15.71ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.89:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.89%3A443#RELAY🚩 | icecream.955850.xyz-443 | 15.02ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.254:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.254%3A443#RELAY🚩 | icecream.955850.xyz-443 | 15.85ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.237:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D217.163.76.237%3A443#RELAY🚩 | icecream.955850.xyz-443 | 14.68ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@45.67.215.153:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D45.67.215.153%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 16.17ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@45.67.215.153:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D45.67.215.153%3A443#RELAY🚩 | icecream.955850.xyz-443 | 14.72ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@45.67.215.234:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D45.67.215.234%3A443#RELAY🚩 | icecream.955850.xyz-443 | 15.11ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@45.67.215.5:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D45.67.215.5%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 14.97ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@160.79.105.81:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D160.79.105.81%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 15.72ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@160.79.105.220:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D160.79.105.220%3A443#RELAY🚩 | icecream.955850.xyz-443 | 14.85ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@192.0.54.184:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D192.0.54.184%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 15.09ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@192.0.54.184:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D192.0.54.184%3A443#RELAY🚩 | icecream.955850.xyz-443 | 15.08ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@160.123.255.199:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D160.123.255.199%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 15.25ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@160.123.255.243:443?allowInsecure=1&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D160.123.255.243%3A443&proxyIP=null#RELAY🚩 | icecream.955850.xyz-443 | 15.18ms
+trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@160.123.255.243:443?allowInsecure=0&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=%2Fproxyip%3D160.123.255.243%3A443#RELAY🚩 | icecream.955850.xyz-443 | 15.36ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.211:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.211-443+%7C+126.39ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.139.37:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.139.37-443+%7C+126.31ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.204.83:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.204.83-443+%7C+124.4ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.204.75:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.204.75-443+%7C+125.93ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.219:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.219-443+%7C+125.71ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.225:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.225-443+%7C+124.66ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.59.166:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.59.166-443+%7C+122.68ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.59.160:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.59.160-443+%7C+121.35ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.18.235:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.18.235-443+%7C+124.74ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.169.128:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.169.128-443+%7C+124.27ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.126.193:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.95.126.193-443+%7C+125.95ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.83.12:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.83.12-443+%7C+125.23ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@198.244.231.26:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+198.244.231.26-443+%7C+110.97ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@37.59.21.130:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+37.59.21.130-443+%7C+122.78ms
+ss://YWVzLTEyOC1jZmI6c2hhZG93c29ja3M=@109.201.152.181:443#NL%F0%9F%87%B3%F0%9F%87%B1+%7C+109.201.152.181-443+%7C+113.83ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.59.169:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.59.169-443+%7C+121.15ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.98.94:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.95.98.94-443+%7C+125.93ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@198.244.231.28:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+198.244.231.28-443+%7C+111.22ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@37.59.21.131:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+37.59.21.131-443+%7C+122.61ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.212:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.212-443+%7C+135.84ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.224:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.224-443+%7C+125.78ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.171.67:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.171.67-443+%7C+125.88ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.125.11:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.95.125.11-443+%7C+124.26ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@198.244.231.25:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+198.244.231.25-443+%7C+113.09ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.110.171:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.110.171-443+%7C+137.26ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.159.104.104:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.159.104.104-443+%7C+117ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.158.204.17:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.158.204.17-443+%7C+108.79ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@198.244.231.27:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+198.244.231.27-443+%7C+112.1ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.157.210:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.95.157.210-443+%7C+122.95ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.158.202.190:443#NL%F0%9F%87%B3%F0%9F%87%B1+%7C+51.158.202.190-443+%7C+113.92ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.159.222.19:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.159.222.19-443+%7C+123.72ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.159.222.36:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.159.222.36-443+%7C+122.01ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.158.61.155:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.158.61.155-443+%7C+121.27ms
+ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@192.71.166.102:989#GR%F0%9F%87%AC%F0%9F%87%B7+%7C+192.71.166.102-989+%7C+151.67ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@51.158.200.141:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+51.158.200.141-443+%7C+114.07ms
+ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@185.123.101.241:989#TR%F0%9F%87%B9%F0%9F%87%B7+%7C+185.123.101.241-989+%7C+152.81ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.99.192:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+141.95.99.192-443+%7C+124.26ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.196:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.196-443+%7C+140.05ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.18.105:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.18.105-443+%7C+123.38ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.126.108:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.95.126.108-443+%7C+124.41ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.204.79:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.204.79-443+%7C+126.03ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.138.150:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.138.150-443+%7C+124.63ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.207:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.207-443+%7C+124.54ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.59.163:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.59.163-443+%7C+122.44ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.110.167:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.110.167-443+%7C+132.49ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.110.240:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.110.240-443+%7C+137.26ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.204.78:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.204.78-443+%7C+125.87ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.18.107:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.18.107-443+%7C+124.71ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.204.74:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.204.74-443+%7C+124.23ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.83.15:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.83.15-443+%7C+123.68ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.94.143.221:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.94.143.221-443+%7C+124.81ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.59.161:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.59.161-443+%7C+122.62ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.71.220:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.71.220-443+%7C+137.06ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.59.165:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.59.165-443+%7C+122.38ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.55.84:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.55.84-443+%7C+136ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.71.221:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.71.221-443+%7C+139.34ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.181:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.181-443+%7C+138.38ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.110.169:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.110.169-443+%7C+137.93ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.186:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.186-443+%7C+139.21ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.211:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.211-443+%7C+137.29ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.110.170:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.110.170-443+%7C+139.07ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.171.97:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.171.97-443+%7C+126.3ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.19.210:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.19.210-443+%7C+123.05ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.209:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.209-443+%7C+137.64ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.110.168:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.110.168-443+%7C+136.8ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.208:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.208-443+%7C+124.2ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@141.95.64.70:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+141.95.64.70-443+%7C+126.03ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.138.149:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.138.149-443+%7C+126.07ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.170.210:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.170.210-443+%7C+125.86ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.138.148:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.138.148-443+%7C+125.66ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@198.244.231.34:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+198.244.231.34-443+%7C+112.24ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@37.59.21.132:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+37.59.21.132-443+%7C+122.35ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@198.244.231.74:443#GB%F0%9F%87%AC%F0%9F%87%A7+%7C+198.244.231.74-443+%7C+111.61ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.84.198:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.84.198-443+%7C+124.87ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.183:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.183-443+%7C+140.02ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@146.59.111.195:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+146.59.111.195-443+%7C+137.95ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.204.82:443#FR%F0%9F%87%AB%F0%9F%87%B7+%7C+162.19.204.82-443+%7C+126.06ms
+ss://YWVzLTI1Ni1jZmI6YXNkS2thc2tKS2Zuc2E=@162.19.139.36:443#DE%F0%9F%87%A9%F0%9F%87%AA+%7C+162.19.139.36-443+%7C+124.65ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWZmFFYXRHajdpWG5jVnBpaktGQzFl@62.60.231.81:59945#SE%F0%9F%87%B8%F0%9F%87%AA+%7C+62.60.231.81-59945+%7C+149.77ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWZmFFYXRHajdpWG5jVnBpaktGQzFl@62.60.231.81:59945#SE%F0%9F%87%B8%F0%9F%87%AA+%7C+62.60.231.81-59945+%7C+148.05ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkM1RwaFBQZk1rSXhGbVBKcEEwajdSa1BKSGplSHFhSmsyRDdDbzdWc0Z1VVUydjE=@45.128.151.67:31348#LV%F0%9F%87%B1%F0%9F%87%BB+%7C+45.128.151.67-31348+%7C+137.39ms
+ss://YWVzLTI1Ni1nY206dFZQVmxVZ1FoajlpN3ZIT0hpajNkYUNKRVVaeGN0RVE5eG9qMFdUNUE4dz0=@139.162.106.142:11359#JP%F0%9F%87%AF%F0%9F%87%B5+%7C+139.162.106.142-11359+%7C+132.8ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5MWE0MWY0ZTAyZGM=@hkkh11v1.xpmc.cc:31785#HK%F0%9F%87%AD%F0%9F%87%B0+%7C+hkkh11v1.xpmc.cc-31785+%7C+219.68ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0MHNybWR4cm0zeHlqbnZxejlld2x4YjJteXE3cmp1dg==@118.163.198.43:2377#TW%F0%9F%87%B9%F0%9F%87%BC+%7C+118.163.198.43-2377+%7C+163.97ms
+ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@p080.panda001.net:36379#KR%F0%9F%87%B0%F0%9F%87%B7+%7C+p080.panda001.net-36379+%7C+367.69ms
+ss://YWVzLTI1Ni1nY206UUpia0JNM1lyRA==@38.244.10.137:54535#US%F0%9F%87%BA%F0%9F%87%B8+%7C+38.244.10.137-54535+%7C+41.07ms
+ss://YWVzLTI1Ni1jZmI6eWlqaWFuMDUwMw==@13.250.27.89:443#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+13.250.27.89-443+%7C+197.56ms
+ss://YWVzLTI1Ni1jZmI6eWlqaWFuMDUwMw==@13.229.110.124:443#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+13.229.110.124-443+%7C+199.05ms
+ss://YWVzLTI1Ni1jZmI6eWlqaWFuMDUwMw==@54.251.26.168:443#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+54.251.26.168-443+%7C+197.81ms
+ss://c3M6Ly9ZV1Z6TFRJMU5pMWpabUk2Y1hkbGNsSkZWMUZBUUE=@p080.panda001.net:36379#KR%F0%9F%87%B0%F0%9F%87%B7+%7C+p080.panda001.net-36379+%7C+353.97ms
+ss://c3M6Ly9ZV1Z6TFRJMU5pMW5ZMjA2VVVwaWEwSk5NMWx5UkE=@38.244.10.137:54535#US%F0%9F%87%BA%F0%9F%87%B8+%7C+38.244.10.137-54535+%7C+40.74ms
+ss://c3M6Ly9ZV1Z6TFRJMU5pMWpabUk2ZVdscWFXRnVNRFV3TXc=@13.250.27.89:443#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+13.250.27.89-443+%7C+197.45ms
+ss://c3M6Ly9ZV1Z6TFRJMU5pMWpabUk2ZVdscWFXRnVNRFV3TXc=@13.229.110.124:443#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+13.229.110.124-443+%7C+198.07ms
+ss://c3M6Ly9ZV1Z6TFRJMU5pMWpabUk2ZVdscWFXRnVNRFV3TXc=@54.251.26.168:443#SG%F0%9F%87%B8%F0%9F%87%AC+%7C+54.251.26.168-443+%7C+199.1ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0MHNybWR4cm0zeHlqbnZxejlld2x4YjJteXE3cmp1dg==@118.163.198.43:2377#TW%F0%9F%87%B9%F0%9F%87%BC+%7C+118.163.198.43-2377+%7C+164.56ms
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5MWE0MWY0ZTAyZGM=@hkkh11v1.xpmc.cc:31785#HK%F0%9F%87%AD%F0%9F%87%B0+%7C+hkkh11v1.xpmc.cc-31785+%7C+230.94ms
